@@ -3,3 +3,8 @@ _site
 .jekyll-cache
 .jekyll-metadata
 .DS_Store
+/.idea/hella-site-base.iml
+/.idea/material_theme_project_new.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
