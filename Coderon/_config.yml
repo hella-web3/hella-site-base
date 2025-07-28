@@ -1,0 +1,38 @@
+#-------------------------------
+# General Site Settings
+title: Proof of Dev
+bio: "This page celebrates your acheivement of becoming a Stellar Developer"
+description: "Official Stellar Dev"
+reading_time: false
+logo: "assets/images/logo.png"
+background: "assets/images/bg.png"
+event-image: assets/images/consensus2025.png
+tiled_bg: false # Set this true if you want to tile your background image, otherwise it will be covered
+locale: en_US
+url: https://anataliocs.github.io
+baseurl: /stellar-dev-cert-base
+
+#-------------------------------
+# Build Settings
+markdown: kramdown
+permalink: /:title
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 4
+paginate_path: "/page/:num"
+
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+
+include:
+  - _pages
+
+sass:
+  style: compressed

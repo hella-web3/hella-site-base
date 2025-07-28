@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<!-- begin post -->
+<div class="container">
+
+  <div class="row">
+    <div class="col col-8 col-d-12">
+
+      <div class="post-head">
+
+        {% if page.video_embed %}
+        <div class="post-video">
+          <div class="post-video__wrap">
+            <iframe src="{{ page.video_embed }}" loading="lazy" width="640" height="360" frameborder="0"
+              webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+        {% else %}
+        {% if page.image %}
+        <div class="post-image">
+          <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+        </div>
+        {% endif %}
+        {% endif %}
+
+        <div class="post-info">
+          {% if page.tags.size >= 1 %}
+          <div class="post-tags">
+            {% for tag in page.tags %}
+            <a href="{{ site.baseurl }}/tags/?tag={{ tag | downcase | url_encode }}" class="post-tag"
+              style="background: {{ page.tags_color | default: 'var(--dark-gray)' }};">{{ tag }}</a>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          <h1 class="post-title">{{ page.title | escape }}</h1>
+
+          <div class="post-meta">
+            <a href="{{ '/about/' |relative_url }}" class="post-meta__image">
+              <img class="lazy" data-src="{{ site.data.settings.author.author_avatar | relative_url }}"
+                alt="{{ site.data.settings.author.author_name }}">
+            </a>
+
+            <div class="post-meta__content">
+              <a class="post-meta__author" href="{{ '/about/' |relative_url }}">{{ site.data.settings.author.author_name
+                }}</a>
+              <div class="post-meta__bottom">
+                <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%d %-b, %Y" %}{{ page.date | date: date_format }}</time> –
+                <span class="post-minutes">
+                  {% assign words = page.content | number_of_words %}
+                  {% if words < 360 %} 1 min read {% else %} {{ words | divided_by:180 }} min read {% endif %} </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <article class="post">
+        <div class="post__content">
+          {{ content }}
+        </div>
+      </article>
+
+      {% include share-buttons.html %}
+      {% include post-navigation.html %}
+      {% if site.data.settings.disqus.enable == true and site.data.settings.disqus.disqus_identifier %}
+        {% include disqus-comments.html %}
+      {% endif %}
+      {% include related-posts.html %}
+    </div>
+
+    <div class="col col-4 col-d-12">
+      <aside class="sidebar">
+        {% include sidebar-widgets/widget-subscribe.html %}
+        {% include sidebar-widgets/widget-social.html %}
+        {% include sidebar-widgets/widget-featured-posts.html %}
+        {% include sidebar-widgets/widget-tags.html %}
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- end post -->

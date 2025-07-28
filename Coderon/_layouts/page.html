@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<!-- begin page -->
+<div class="container">
+  <div class="row">
+
+    <div class="col col-8 col-d-12">
+      <div class="page-head">
+
+        {% if page.video_embed %}
+        <div class="page-video">
+          <div class="page-video__wrap">
+            <iframe src="{{ page.video_embed }}" loading="lazy" width="640" height="360" frameborder="0" webkitallowfullscreen
+              mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+        {% else %}
+        {% if page.image %}
+        <div class="page-image">
+          <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+        </div>
+        {% endif %}
+        {% endif %}
+
+        <div class="page-info">
+          <h1 class="page-title">{{ page.title | escape }}</h1>
+        </div>
+
+      </div>
+
+      <article class="page">
+        <div class="page__content">
+          {{ content }}
+        </div>
+      </article>
+    </div>
+
+    <div class="col col-4 col-d-12">
+      <aside class="sidebar">
+        {% include sidebar-widgets/widget-subscribe.html %}
+        {% include sidebar-widgets/widget-social.html %}
+        {% include sidebar-widgets/widget-featured-posts.html %}
+        {% include sidebar-widgets/widget-tags.html %}
+      </aside>
+    </div>
+
+  </div>
+</div>
+<!-- end page -->

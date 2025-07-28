@@ -1,0 +1,49 @@
+{
+  "name": "Stellar Dev Container",
+  "dockerFile": "./Dockerfile",
+  "context": "..",
+  "remoteUser": "vscode",
+  "containerEnv": {
+    "RUBY_VERSION" : "3.4.3 ",
+    "BUNDLE_VERSION" : "2.6.7",
+    "BUNDLE_GEMFILE" : "/home/vscode/IdeaProjects/stellar-dev-cert-base/Gemfile",
+    "BUNDLE_CACHE_ALL": "true",
+    "BUNDLE_CACHE_ALL_PLATFORMS": "true"
+  },
+  "build": {
+    "args": {
+      "BUILDKIT_INLINE_CACHE": "1"
+    }
+  },
+  "forwardPorts": [
+    4000
+  ],
+  "portsAttributes": {
+    "4000": {
+      "label": "Jekyll",
+      "requireLocalPort": true,
+      "elevateIfNeeded": true,
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/ruby:1": {
+      "version": "3.2.2"
+    },
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/sshd:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2.5.3": {
+      "configureZshAsDefaultShell": true,
+      "username": "vscode"
+    }
+  },
+  "customizations": {
+    "jetbrains": {
+      "settings": {
+        "com.intellij:app:HttpConfigurable.use_proxy_pac": true,
+        "org.jetbrains.plugins.github:app:GithubSettings.clone_git_using_ssh": true
+      }
+    }
+  },
+  "postCreateCommand": "bundle exec jekyll serve"
+}
