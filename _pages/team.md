@@ -18,7 +18,7 @@ Deep experience in service oriented architecture with broad generalist experienc
 
 > I work towards a global, inclusive, diverse vision of the tech industry where developers all over the world are empowered to dream, build and succeed together.
 
-![Keyboard]({{site.baseurl}}/images/01-3.jpg)
+![Keyboard]({{site.baseurl}}/images/chris1.jpg)
 *Photo by [Pablo Stanley](https://www.lummi.ai/photo/contemplative-technicolor-workstation-sonrb) on [Lummi](https://www.lummi.ai/)*
 
 ## Anna Lopatina
@@ -28,5 +28,5 @@ Web3 native and viral specialist.
 
 > Ready to make a difference
 > 
-![Keyboard]({{site.baseurl}}/images/01-3.jpg)
+![Keyboard]({{site.baseurl}}/images/anna1.jpg)
 *Photo by [Pablo Stanley](https://www.lummi.ai/photo/contemplative-technicolor-workstation-sonrb) on [Lummi](https://www.lummi.ai/)*

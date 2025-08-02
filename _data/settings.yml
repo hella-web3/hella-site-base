@@ -28,6 +28,8 @@ menu_settings:
       title: 'Team'
     - url: '/contact/'
       title: 'Contact'
+    - url: '/'
+      title: 'Sub Menu'
       submenu:
       - title: 'Videos'
         url: '/videos/'
@@ -38,14 +40,15 @@ menu_settings:
 # Author Settings
 author:
   author_name: Chris Anatalio
-  author_avatar: /images/02.jpg
+  author_avatar: /images/chris1.jpg
 
 
 #-------------------------------
 # Hero Settings
 hero:
   enable: true
-  hero_avatar: /images/02.jpg
+  hero_avatar: /images/chris1.jpg
+  hero_avatar2: /images/anna1.jpg
   hero_title: Hella Consulting
   hero_subtitle: Web3 Native Fractional engineering, DevRel, Digital Marketing & Strategy
   hero_description: |
@@ -79,27 +82,10 @@ blog:
   enable: true
   blog_title: Topic Zero Blog
 
-
-#-------------------------------
-# Tags Section Settings
-tags_section:
-  enable: true
-  tags_section_title: Hacker’s Haven
-  tags:
-    - tag: "Programming"
-      image: "/images/20.jpg"
-    - tag: "Linux"
-      image: "/images/21.jpg"
-    - tag: "Productivity"
-      image: "/images/22.jpg"
-    - tag: "Security"
-      image: "/images/23.jpg"
-
-
 #-------------------------------
 # Videos Section Settings
 videos_section:
-  enable: true
+  enable: false
   videos_section_title: Latest Videos
 
 
@@ -107,7 +93,7 @@ videos_section:
 # Gallery Section Settings
 gallery_section:
   enable: true
-  gallery_section_title: Byte Frame
+  gallery_section_title: Previous Projects
   gallery:
     gallery_images:
       - alt: 'Rest'
