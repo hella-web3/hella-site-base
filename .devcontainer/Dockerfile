@@ -12,6 +12,8 @@ ENV DEBIAN_FRONTEND=noninteractive \
     MY_RUBY_HOME=/usr/local/rvm/rubies/default \
     RUBY_VERSION=3.4.3
 
+WORKDIR /home/vscode/workspace/hella-site-base
+RUN chmod 775 -R .
 USER vscode
 
 RUN export PATH="/usr/local/rvm:/usr/local/rvm/bin/rvm":$PATH
@@ -28,7 +30,7 @@ RUN echo "export PATH='~/.bundle:$PATH'" >> ~/.bashrc
 
 COPY . .
 
-RUN bundle install --gemfile=Gemfile && bundle exec jekyll build
+RUN bundle install --frozen --gemfile=Gemfile
 
 
 
