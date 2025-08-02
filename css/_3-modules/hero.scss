@@ -28,18 +28,22 @@
   padding: 32px;
   border-radius: 12px;
   background: var(--background-alt-color-2);
+
+
+  @media (max-width: $mobile) {
+    padding: 24px;
+  }
+}
+.hero__inner:after {
   box-shadow: var(--box-shadow-1);
   filter: brightness(120%);
-  border: 4px inset transparent; /* Transparent border to create space for the gradient */
+  border: 5px solid transparent; /* Transparent border to create space for the gradient */
   background:
           linear-gradient(white, white) padding-box, /* Inner background for the element's content */
           linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%) border-box; /* Gradient for the border area */
   background-clip: padding-box, border-box; /* Clip backgrounds to their respective areas */
   background-origin: border-box; /* Ensures the gradient starts from the border edge */
-
-  @media (max-width: $mobile) {
-    padding: 24px;
-  }
+  z-index: -1;
 }
 
 .hero__right {
@@ -81,7 +85,7 @@
 .hero__icon {
   align-items: center;
   color: var(--heading-font-color);
-  margin: 20px 40px 20px 0;
+  margin: 40px 40px 20px 0;
   text-align: center;
   display: flex;
   justify-content: center;
