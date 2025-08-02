@@ -50,7 +50,10 @@
               <div class="row">
                   <div class="col col-12 col-d-12">
                     {% if site.data.settings.hero.hero_title %}
-                    <i class="hero__icon fa-solid fa-laptop-code fa-bounce fa-2xl"></i>
+                      <div class="hero__icon">
+                          <i class="fa-solid fa-laptop-code fa-bounce fa-2xl"></i>
+                      </div>
+
                     <h1 class="hero__title">{{ site.data.settings.hero.hero_title }}</h1>
                     {% endif %}
 

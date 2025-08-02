@@ -1,6 +1,13 @@
 /* Hero */
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
 .hero {
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   box-shadow: var(--box-shadow-1);
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   margin-right:25px;
@@ -27,16 +34,48 @@
   }
 }
 
-.container:before {
-  z-index:-1;
+.hero:before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+                  var(--rotate)
+          , #5ddcff, #3c67e3 43%, #4e00c2);
   position: absolute;
-  content:"";
-  width:230px;
-  height:230px;
-  left:10px;
-  top:0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-  filter: blur(20px);
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+
+.hero::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+                  var(--rotate)
+          , #5ddcff, #3c67e3 43%, #4e00c2);
+  opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
 }
 
 .hero__inner {
