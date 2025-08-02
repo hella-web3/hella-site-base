@@ -1,25 +1,16 @@
 /* Hero */
 
-@property --rotate {
-  syntax: "<angle>";
-  initial-value: 132deg;
-  inherits: false;
-}
-
-@keyframes spin {
-  0% {
-    --rotate: 0deg;
-  }
-  100% {
-    --rotate: 360deg;
-  }
-}
-
 .hero {
   margin-bottom: 70px;
   box-shadow: var(--box-shadow-1);
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   filter: brightness(120%);
+  border: 4px solid transparent; /* Transparent border to create space for the gradient */
+  border-radius: 15px; /* Apply border-radius for rounded corners */
+  background:
+          linear-gradient(white, white) padding-box, /* Inner background for the element's content */
+          linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%) border-box; /* Gradient for the border area */
+  background-clip: padding-box, border-box; /* Clip backgrounds to their respective areas */
+  background-origin: border-box; /* Ensures the gradient starts from the border edge */
 
   .row {
     align-items: center;
@@ -42,30 +33,6 @@
   }
 }
 
-.hero:before {
-  content: "";
-  border-radius: 1px;
-  background-image: linear-gradient(
-                  var(--rotate)
-          , #5ddcff, #3c67e3 43%, #4e00c2);
-  z-index: -1;
-  animation: spin 2.5s linear infinite;
-}
-
-.hero::after {
-  content: "";
-  top: calc(var(--card-height) / 6);
-  z-index: -1;
-  transform: scale(0.8);
-  filter: blur(calc(var(--card-height) / 6));
-  background-image: linear-gradient(
-                  var(--rotate)
-          , #5ddcff, #3c67e3 43%, #4e00c2);
-  opacity: 1;
-  transition: opacity .5s;
-  animation: spin 2.5s linear infinite;
-}
-
 .hero__inner {
   padding: 32px;
   border-radius: 16px;
@@ -78,7 +45,6 @@
 
 .hero__right {
   padding-left: 20px;
-
   padding-left: 12px;
   max-width: 580px;
 
@@ -116,7 +82,7 @@
 .hero__icon {
   align-items: center;
   color: var(--heading-font-color);
-  margin-bottom: 12px;
+  margin: 20px 40px 20px 0;
   text-align: center;
   display: flex;
   justify-content: center;
