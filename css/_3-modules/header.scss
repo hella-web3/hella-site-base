@@ -34,6 +34,11 @@
   line-height: 1;
   font-weight: 700;
   letter-spacing: -1px;
+  background: var(--gradient-color); /* Define your gradient colors and direction */
+  -webkit-background-clip: text; /* Clip the background to the shape of the text (for WebKit browsers) */
+  background-clip: text; /* Standard property for clipping background to text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent to reveal the background gradient (for WebKit browsers) */
+  text-fill-color: transparent;
 }
 
 .logo__image,

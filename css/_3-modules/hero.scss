@@ -26,24 +26,13 @@
 
 .hero__inner {
   padding: 32px;
-  border-radius: 12px;
+  border-radius: 10px;
   background: var(--background-alt-color-2);
-
+  box-shadow: var(--box-shadow-color);
 
   @media (max-width: $mobile) {
     padding: 24px;
   }
-}
-.hero__inner:after {
-  box-shadow: var(--box-shadow-1);
-  filter: brightness(120%);
-  border: 5px solid transparent; /* Transparent border to create space for the gradient */
-  background:
-          linear-gradient(white, white) padding-box, /* Inner background for the element's content */
-          linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%) border-box; /* Gradient for the border area */
-  background-clip: padding-box, border-box; /* Clip backgrounds to their respective areas */
-  background-origin: border-box; /* Ensures the gradient starts from the border edge */
-  z-index: -1;
 }
 
 .hero__right {
@@ -85,10 +74,16 @@
 .hero__icon {
   align-items: center;
   color: var(--heading-font-color);
-  margin: 40px 40px 20px 0;
+  margin: 45px 40px 40px 0;
   text-align: center;
   display: flex;
   justify-content: center;
+
+  @media (max-width: $mobile) {
+    font-size: 1.25em;
+    line-height: 0.05em;
+    vertical-align: -0.075em;
+  }
 }
 
 .hero__title {
@@ -96,6 +91,11 @@
   font-size: 68px;
   line-height: 1;
   color: var(--heading-font-color);
+  background: var(--gradient-color); /* Define your gradient colors and direction */
+  -webkit-background-clip: text; /* Clip the background to the shape of the text (for WebKit browsers) */
+  background-clip: text; /* Standard property for clipping background to text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent to reveal the background gradient (for WebKit browsers) */
+  text-fill-color: transparent; /* Standard property for transparent text fill */
 
   @media (max-width: $wide) {
     font-size: 56px;

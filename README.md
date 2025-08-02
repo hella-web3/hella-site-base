@@ -9,6 +9,7 @@ Base site for Hella.
 Install rbenv
 ```terminaloutput
 brew install rbenv
+rbenv init
 ```
 
 Install ruby
@@ -19,7 +20,7 @@ rbenv global 3.4.3
 
 Update bundler
 ```terminaloutput
-gem install bundler -v 2.6.7 --user-install
+gem install bundler -v 2.6.7
 ```
 
 Run app

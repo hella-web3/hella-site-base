@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '~> 3.4.3'
 
 gem "bundler", "~> 2.6.7"
 
