@@ -1,6 +1,6 @@
 #-------------------------------
 # Site Settings
-title: Coderon
+title: Hella
 description: Coderon is a super modern and unique Jekyll blog theme
 logo: # You can add own logo. For example '/images/logo.png'.
 logo_dark:
@@ -51,24 +51,20 @@ author:
 hero:
   enable: true
   hero_avatar: /images/01-1.jpg
-  hero_title: Proof of Dev Certificate
-  hero_subtitle: Congrats for becoming the newest member of the Stellar Development Community
+  hero_title: Hella Consulting
+  hero_subtitle: Web3 Native fractional engineering, DevRel, Digital Marketing & Strategy
   hero_description: |
-    This Github page was attached to your profile to commemorate your achievements.  This template was put together
-    by the DevRel team for you to represent a verifiable, fun and authentic recognition of your achievement.
-    This page was created with what's called, Build Provenance, which uses a combination of devops, cryptography
-    and creative coding to create a living, growing, certifiable celebration and social proof of your accomplishments
-    as a developer on the Stellar Blockchain.
+    Design.  Build.  Launch.  Hella is a full-service consultancy with broad experience across Web2, Enterprise and Web3.
   hero_image: /images/01.jpg
   hero_image_caption:
-  hero_button_text: Reach out to the DevRel Team
+  hero_button_text: Work with Us
   hero_button_link: '/contact/'
 
 
 # Logos
 logos:
   enable: true
-  logos_title: Nerd Stuff
+  logos_title: Previous Clients
   logo_image:
     - alt: "Game Boy"
       image: "/images/1000.jpg"
@@ -86,7 +82,7 @@ logos:
 # Section Blog Settings
 blog:
   enable: true
-  blog_title: The Binary Journal
+  blog_title: Topic Zero
 
 
 #-------------------------------
@@ -140,26 +136,23 @@ gallery_section:
 # Newsletter Settings
 mailchimp:
   enable: true
-  mailchimp_title: Stay inspired weekly ✌️
-  mailchimp_description: Every Sunday, I deliver actionable tips for enhancing productivity, practical life advice, and top-notch insights gathered from various sources, right to your email inbox.
+  mailchimp_title: Monthly Up-level ✌️
+  mailchimp_description: Actionable tips and alpha for enhancing productivity from an industry veterans.
   mailchimp_identifier: gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp # Add your MailChimp form identifier. For example - gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp
-  mailchimp_input_text: Your email address...
-  mailchimp_button_text: Join Now
+  mailchimp_input_text: Your email...
+  mailchimp_button_text: No fluff, Just Value
 
 
 #-------------------------------
 # Footer Settings
-footer_description: Here, I share ideas, tools, and methods that help me balance productivity with creativity while keeping control over my digital world. Dive in, get inspired, and feel free to share your thoughts!
+footer_description: Get inspired, find guidance and up-level your skillset!
 
 
 #-------------------------------
 # Social Settings
 social:
-- {icon: "fa-brands fa-x-twitter", name: "Twitter", link: "https://twitter.com"}
-- {icon: "fa-brands fa-facebook", name: "Facebook", link: "https://facebook.com"}
-- {icon: "fa-brands fa-mastodon", name: "Mastodon", link: "https://mastodon.social"}
-- {icon: "fa-brands fa-reddit-alien", name: "Reddit", link: "https://reddit.com"}
-- {icon: "fa-brands fa-github", name: "Github", link: "https://github.com"}
+- {icon: "fa-brands fa-x-twitter", name: "Twitter", link: "https://x.com/CAnatalio"}
+- {icon: "fa-brands fa-github", name: "Github", link: "https://github.com/anataliocs"}
 - {icon: "fa-solid fa-rss", name: "Rss", link: "/feed.xml"}
 
 # Example of adding a new link to the sidebar and footer - {icon: "fa-brands fa-youtube", name: "Youtube", link: https://youtube.com"}
