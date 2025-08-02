@@ -45,5 +45,5 @@
       }
     }
   },
-  "postCreateCommand": "bundle exec jekyll serve"
+  "postCreateCommand": "ls"
 }

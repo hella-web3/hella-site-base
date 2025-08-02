@@ -16,10 +16,10 @@
   --seafoam: #93E9BE;
   --rgb-color: 255, 255, 255;
 
-  --background-rgba: rgba(var(--seafoam), 0.95);
+  --background-rgba: rgba(var(--rgb-color), 0.95);
   --background-color: var(--white);
   --background-alt-color: var(--lighten-gray);
-  --background-alt-color-2: var(--lightest-gray);
+  --background-alt-color-2: var(--seafoam);
 
   --text-color: var(--dark-blue);
   --text-alt-color: var(--blue-gray);
@@ -57,7 +57,7 @@
   --dark: #0f172a;
   --rgb-color: 15, 23, 42;
 
-  --background-rgba: rgba(var(--seafoam), 0.85);
+  --background-rgba: rgba(var(--rgb-color), 0.85);
   --background-color: var(--dark);
   --background-alt-color: #2d3b4e;
   --background-alt-color-2: #1a2334;
