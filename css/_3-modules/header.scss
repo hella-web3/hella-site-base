@@ -300,6 +300,17 @@
   align-items: center;
   margin-left: auto;
 
+  .nav-cta {
+    gap: 5px;
+    padding-bottom: 10px;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
   .search-button {
     display: flex;
     align-items: center;
