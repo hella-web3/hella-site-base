@@ -43,19 +43,19 @@ menu_settings:
 # Author Settings
 author:
   author_name: Chris Anatalio
-  author_avatar: /images/01-1.jpg
+  author_avatar: /images/02.jpg
 
 
 #-------------------------------
 # Hero Settings
 hero:
   enable: true
-  hero_avatar: /images/01-1.jpg
+  hero_avatar: /images/02.jpg
   hero_title: Hella Consulting
   hero_subtitle: Web3 Native fractional engineering, DevRel, Digital Marketing & Strategy
   hero_description: |
     Design.  Build.  Launch.  Hella is a full-service consultancy with broad experience across Web2, Enterprise and Web3.
-  hero_image: /images/01.jpg
+  hero_image: /images/101.jpg
   hero_image_caption:
   hero_button_text: Work with Us
   hero_button_link: '/contact/'
