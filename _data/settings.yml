@@ -24,19 +24,15 @@ color_scheme:
 # Navigation Settings
 menu_settings:
   menu_items:
-    - url: '/about/'
-      title: 'About'
+    - url: '/team/'
+      title: 'Team'
     - url: '/contact/'
       title: 'Contact'
       submenu:
       - title: 'Videos'
         url: '/videos/'
-      - title: 'Archive'
+      - title: 'Blog'
         url: '/archive/'
-      - title: 'Pages'
-      - url: '/elements/'
-        title: 'Elements'
-
 
 #-------------------------------
 # Author Settings
@@ -63,7 +59,7 @@ hero:
 # Logos
 logos:
   enable: true
-  logos_title: Previous Clients
+  logos_title: Our Beloved Clients
   logo_image:
     - alt: "Game Boy"
       image: "/images/1000.jpg"
