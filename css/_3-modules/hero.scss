@@ -2,6 +2,9 @@
 .hero {
   margin-bottom: 80px;
   box-shadow: var(--box-shadow-1);
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  margin-right:25px;
+  filter: brightness(120%);
 
   .row {
     align-items: center;
@@ -22,6 +25,18 @@
   @media (max-width: $mobile) {
     margin-bottom: 60px;
   }
+}
+
+.container:before {
+  z-index:-1;
+  position: absolute;
+  content:"";
+  width:230px;
+  height:230px;
+  left:10px;
+  top:0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  filter: blur(20px);
 }
 
 .hero__inner {
@@ -69,6 +84,12 @@
     height: 50px;
     margin-bottom: 15px;
   }
+}
+
+.hero__icon {
+  align-items: center;
+  color: var(--heading-font-color);
+  margin-bottom: 12px;
 }
 
 .hero__title {
@@ -133,6 +154,7 @@
 
 .hero__button {
   margin-top: 16px;
+  box-shadow: var(--box-shadow-1);
 
   @media (max-width: $mobile) {
     margin-top: 8px;
