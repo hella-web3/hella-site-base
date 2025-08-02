@@ -14,8 +14,6 @@ ENV DEBIAN_FRONTEND=noninteractive \
 
 USER vscode
 
-WORKDIR /home/vscode/IdeaProjects/coderon-jekyll
-
 RUN export PATH="/usr/local/rvm:/usr/local/rvm/bin/rvm":$PATH
 RUN echo "export PATH='/usr/local/rvm/bin/rvm:$PATH'" >> ~/.zshrc
 RUN echo "export PATH='/usr/local/rvm/bin/rvm:$PATH'" >> ~/.bashrc

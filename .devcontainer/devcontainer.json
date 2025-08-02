@@ -6,7 +6,6 @@
   "containerEnv": {
     "RUBY_VERSION" : "3.4.3 ",
     "BUNDLE_VERSION" : "2.6.7",
-    "BUNDLE_GEMFILE" : "/home/vscode/IdeaProjects/stellar-dev-cert-base/Gemfile",
     "BUNDLE_CACHE_ALL": "true",
     "BUNDLE_CACHE_ALL_PLATFORMS": "true"
   },
@@ -28,7 +27,7 @@
   },
   "features": {
     "ghcr.io/devcontainers/features/ruby:1": {
-      "version": "3.2.2"
+      "version": "3.4"
     },
     "ghcr.io/devcontainers/features/node:1": {},
     "ghcr.io/devcontainers/features/sshd:1": {},
