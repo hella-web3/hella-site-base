@@ -30,8 +30,6 @@ RUN echo "export PATH='~/.bundle:$PATH'" >> ~/.bashrc
 
 COPY . .
 
-RUN bundle install --frozen --gemfile=Gemfile
-
 
 
 
