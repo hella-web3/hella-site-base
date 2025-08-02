@@ -1,7 +1,7 @@
 #-------------------------------
 # Site Settings
 title: Hella
-description: Coderon is a super modern and unique Jekyll blog theme
+description: Hella Consulting - Web3 Native Fractional engineering, DevRel, Digital Marketing & Strategy
 logo: # You can add own logo. For example '/images/logo.png'.
 logo_dark:
 
@@ -52,7 +52,7 @@ hero:
   enable: true
   hero_avatar: /images/02.jpg
   hero_title: Hella Consulting
-  hero_subtitle: Web3 Native fractional engineering, DevRel, Digital Marketing & Strategy
+  hero_subtitle: Web3 Native Fractional engineering, DevRel, Digital Marketing & Strategy
   hero_description: |
     Design.  Build.  Launch.  Hella is a full-service consultancy with broad experience across Web2, Enterprise and Web3.
   hero_image: /images/101.jpg

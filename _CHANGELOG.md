@@ -1,3 +1,3 @@
-## [1.0.0] - 2025-01-27
+## [0.0.1] - 2025-08-01
 
-- Initial Release
+- Alpha Prototype

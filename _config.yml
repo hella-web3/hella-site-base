@@ -1,8 +1,8 @@
 #-------------------------------
 # General Site Settings
-title: Proof of Hella
-bio: "Hella"
-description: "Official Dev"
+title: Hella Consulting
+bio: "Web3 Native Fractional engineering, DevRel, Digital Marketing & Strategy"
+description: "Web3 Native Fractional engineering, DevRel, Digital Marketing & Strategy"
 reading_time: false
 logo: "assets/images/logo.png"
 background: "assets/images/bg.png"
@@ -10,7 +10,7 @@ event-image: assets/images/consensus2025.png
 tiled_bg: false # Set this true if you want to tile your background image, otherwise it will be covered
 locale: en_US
 url: https://anataliocs.github.io
-baseurl: /stellar-dev-cert-base
+baseurl: /hella-site-base
 
 #-------------------------------
 # Build Settings
