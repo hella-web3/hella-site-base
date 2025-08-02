@@ -4,6 +4,7 @@ title: Hella
 description: Hella Consulting - Web3 Native Fractional engineering, DevRel, Digital Marketing & Strategy
 logo: # You can add own logo. For example '/images/logo.png'.
 logo_dark:
+baseurl: /hella-site-base
 
 
 #-------------------------------
