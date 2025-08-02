@@ -19,7 +19,7 @@
         <div class="col col-6 col-d-12">
           <div class="hero__right">
               <div class="row">
-                  <div class="col col-6 col-d-12">
+                  <div class="col col-3 col-d-3">
                       {% if site.data.settings.hero.hero_avatar %}
                       <div class="hero__avatar">
                           <img class="lazy"
@@ -28,11 +28,20 @@
                       </div>
                       {% endif %}
                   </div>
-                  <div class="col col-6 col-d-12">
+                  <div class="col col-3 col-d-3">
                       {% if site.data.settings.hero.hero_avatar %}
                       <div class="hero__avatar">
                           <img class="lazy"
                                data-src="{{ site.data.settings.baseurl }}{{ site.data.settings.hero.hero_avatar2 }}"
+                               alt="{{ site.data.settings.author.author_name }}">
+                      </div>
+                      {% endif %}
+                  </div>
+                  <div class="col col-3 col-d-3">
+                      {% if site.data.settings.hero.hero_avatar %}
+                      <div class="hero__avatar">
+                          <img class="lazy"
+                               data-src="{{ site.data.settings.baseurl }}{{ site.data.settings.hero.hero_avatar3 }}"
                                alt="{{ site.data.settings.author.author_name }}">
                       </div>
                       {% endif %}

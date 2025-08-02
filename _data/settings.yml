@@ -49,6 +49,7 @@ hero:
   enable: true
   hero_avatar: /images/chris1.jpg
   hero_avatar2: /images/anna1.jpg
+  hero_avatar3: /images/02.jpg
   hero_title: Hella Consulting
   hero_subtitle: Web3 Native Fractional engineering, DevRel, Digital Marketing & Strategy
   hero_description: |
