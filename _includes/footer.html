@@ -53,7 +53,7 @@
         {% if site.data.settings.menu_settings.menu_items %}
         <div class="col col-2 col-d-6 col-m-12">
           <div class="footer-nav__left">
-            <h3 class="footer__title">Menu</h3>
+            <h3 class="footer__title">Nav</h3>
             <div class="footer-nav__list">
             {% for item in site.data.settings.menu_settings.menu_items %}
             {% if item.submenu %}
@@ -72,23 +72,6 @@
             {% assign has_submenu = true %}
           {% endif %}
         {% endfor %}
-
-        {% if has_submenu %}
-        <div class="col col-2 col-d-6 col-m-12">
-          <div class="footer-nav__right">
-            {% for item in site.data.settings.menu_settings.menu_items %}
-            {% if item.submenu %}
-            <h3 class="footer__title">{{ item.title }}</h3>
-            <div class="footer-nav__list">
-              {% for submenu-item in item.submenu %}
-                <a class="footer-nav__link" href="{{ submenu-item.url | relative_url }}">{{submenu-item.title}}</a>
-              {% endfor %}
-            </div>
-            {% endif %}
-            {% endfor %}
-          </div>
-        </div>
-        {% endif %}
 
       </div>
 
