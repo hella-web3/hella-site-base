@@ -1,10 +1,10 @@
 ---
 layout: post
-title: How Games Keep Players Engaged and Motivated
+title: Trading Alpha
 description: In recent years, indie games have transformed the gaming industry, offering unique experiences that often surpass mainstream titles in creativity and innovation.
 date: 2024-10-19 15:01:35 +0300
 image: '/images/33.jpg'
-tags: [Games]
+tags: [Trading]
 tags_color: '#ff4500'
 featured: true
 ---
