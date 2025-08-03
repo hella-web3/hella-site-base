@@ -1,7 +1,7 @@
 #-------------------------------
 # Site Settings
 title: Hella
-description: Hella Consulting - Web3 Native Fractional engineering, DevRel, Digital Marketing & Strategy
+description: Hella Consulting - Web3 Native Fractional Engineering, DevRel, Digital Marketing & Strategy
 logo: # You can add own logo. For example '/images/logo.png'.
 logo_dark:
 baseurl: /hella-site-base
@@ -12,13 +12,6 @@ baseurl: /hella-site-base
 color_scheme:
   default: dark # Default theme applied on the first visit (options: "light" or "dark")
   toggle: true # Enable theme toggle
-
-# Enables or disables the theme toggle functionality:
-# - true: Users can switch between light and dark modes using a toggle button.
-#          The site will remember their choice for future visits.
-# - false: The theme will always use the default mode specified above,
-#          and the toggle button will not be displayed.
-
 
 #-------------------------------
 # Navigation Settings
