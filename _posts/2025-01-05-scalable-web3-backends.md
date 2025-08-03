@@ -28,15 +28,7 @@ Ruby on Rails is known for its elegant syntax and is popular among developers wh
 
 Understanding core concepts is as important as learning a language. Key principles like variables, loops, conditionals, and functions apply across languages, so focus on these when starting out. Additionally, building a strong foundation will help you learn additional languages faster and more effectively in the future.
 
-<div class="gallery-box">
-  <div class="gallery gallery-columns-2">
-    {% include img.html src ="/images/02-2.jpg" alt="Server" caption="Home server maintenance" %}
-    {% include img.html src ="/images/02-3.jpg" alt="Workspace" caption="A beautiful workspace" %}
-    {% include img.html src ="/images/02-4.jpg" alt="Monitors" caption="Three monitors and multitasking" %}
-    {% include img.html src ="/images/02-5.jpg" alt="Headphones" caption="Testing a new headphones" %}
-  </div>
-  <p>A gallery of stunning shots</p>
-</div>
+
 
 Programming also requires problem-solving skills and the ability to debug and troubleshoot. When you’re stuck, resources like Stack Overflow, GitHub, and Reddit can be lifesavers, offering advice from seasoned developers. Tackling real-world problems or coding challenges can deepen your understanding and prepare you for more advanced projects.
 
@@ -49,17 +41,11 @@ Useful information that users should know, even when skimming content.
 
 If you’re uncertain, Python is often recommended for beginners because of its versatility. Many online courses offer interactive lessons, helping you practice coding in a structured way.
 
-```js
-  $('.top').click(function () {
-    $('html, body').stop().animate({ scrollTop: 0 }, 'slow', 'swing');
-  });
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(window).height()) {
-      $('.top').addClass("top-active");
-    } else {
-      $('.top').removeClass("top-active");
-    };
-  });
-```
+<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="KwdWQqB" data-pen-title="🌈 Pure CSS Animated Gradient Background" data-user="anataliocs" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/anataliocs/pen/KwdWQqB">
+  🌈 Pure CSS Animated Gradient Background</a> by Chris Anatalio (<a href="https://codepen.io/anataliocs">@anataliocs</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
 
 Learning to code is a journey, and consistent practice is essential. Building simple projects, solving problems, and collaborating with other learners are effective ways to progress. It’s normal to feel challenged at times, but every obstacle helps you grow as a developer. Enjoy the process, and don't be afraid to experiment with code!
