@@ -22,6 +22,8 @@ menu_settings:
       title: 'Team'
     - url: '/contact/'
       title: 'Contact'
+    - url: '/blog/'
+      title: 'Blog'
 
 #-------------------------------
 # Author Settings

@@ -1,0 +1,152 @@
+/* Hero */
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.services-page {
+  margin-bottom: 70px;
+
+  .row {
+    align-items: center;
+  }
+
+  .col {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  @media (max-width: $desktop) {
+    .row {
+      flex-direction: column;
+
+      .col {
+        &:last-child {
+          order: -1;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 60px;
+  }
+}
+
+.services-page__inner {
+  padding: 18px;
+  margin-bottom: 32px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background: var(--background-alt-color-2);
+  box-shadow: var(--box-shadow-color);
+}
+
+.services__icon {
+  align-items: center;
+  color: var(--heading-font-color);
+  margin: 5px 0 5px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-shadow: 0 0 10px yellow, 0 0 20px yellow;
+  animation: glow 3s ease-in-out infinite;
+  filter: saturate(1.5);
+
+  @media (max-width: $mobile) {
+    font-size: 1.25em;
+    line-height: 0.05em;
+    vertical-align: -0.075em;
+  }
+}
+
+.services__title {
+  margin: 12px auto 12px auto;
+  color: var(--heading-font-color);
+  text-align: center;
+  width: fit-content;
+  background: var(--gradient-color); /* Define your gradient colors and direction */
+  -webkit-background-clip: text; /* Clip the background to the shape of the text (for WebKit browsers) */
+  background-clip: text; /* Standard property for clipping background to text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent to reveal the background gradient (for WebKit browsers) */
+  text-fill-color: transparent; /* Standard property for transparent text fill */
+
+  hr {
+    margin: 0;
+    height: 2px;
+    background: var(--gradient-color);
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 10px auto 10px auto;
+
+    h1 {
+      font-size: 16px;
+      line-height: 1.1;
+    }
+  }
+}
+
+.services__description {
+  margin-bottom: 14px;
+
+  strong {
+    line-height: 1.2;
+    background: var(--gradient-color); /* Define your gradient colors and direction */
+    -webkit-background-clip: text; /* Clip the background to the shape of the text (for WebKit browsers) */
+    background-clip: text; /* Standard property for clipping background to text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to reveal the background gradient (for WebKit browsers) */
+    text-fill-color: transparent;
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  a:not([class]) {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    color: var(--heading-font-color);
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+
+    p {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.services__button {
+  margin-top: 16px;
+
+  a {
+    margin-left: 10px;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 8px;
+  }
+}
