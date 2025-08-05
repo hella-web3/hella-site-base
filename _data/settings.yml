@@ -17,6 +17,8 @@ color_scheme:
 # Navigation Settings
 menu_settings:
   menu_items:
+    - url: '/services/'
+      title: 'Services'
     - url: '/team/'
       title: 'Team'
     - url: '/contact/'
@@ -41,11 +43,10 @@ author:
 hero:
   enable: true
   hero_title: Hella
-  hero_subtitle: Web3 Native Fractional Engineering, DevRel, Digital Marketing & Strategy
+  hero_subtitle: Web3-Native Fractional Engineering, DevRel, Digital Marketing & Strategy
   hero_description: |
-    Hella is a full-service consultancy with broad experience across Web2, Enterprise and Web3.
+    Full-service consultancy with broad experience across Web2, Enterprise and Web3
   hero_image: /images/101.jpg
-  hero_image_caption:
   hero_button_text: Let's Go
   hero_button_link: '/contact/'
 
