@@ -86,37 +86,17 @@
 /* =======================
 :: 3-Modules
 ======================= */
-/* >>>>>>>>>>>>>> :: 3.1-Header <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/header.scss %}
-/* >>>>>>>>>>>>>> :: 3.2-Search <<<<<<<<<<<<<<< */
-{% include_relative _3-modules/search.scss %}
-/* >>>>>>>>>>>>>> :: 3.3-Footer <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/footer.scss %}
-/* >>>>>>>>>>>>>> :: 3.4-Gallery <<<<<<<<<<<<<<< */
-{% include_relative _3-modules/gallery.scss %}
-/* >>>>>>>>>>>>>> :: 3.5-Hero <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/hero.scss %}
-/* >>>>>>>>>>>>>> :: 3.6-Logos <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/logos.scss %}
-/* >>>>>>>>>>>>>> :: 3.7-Section Blog <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/section-blog.scss %}
-/* >>>>>>>>>>>>>> :: 3.8-Sidebar <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/sidebar.scss %}
-/* >>>>>>>>>>>>>> :: 3.9-Article <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/article.scss %}
-/* >>>>>>>>>>>>>> :: 3.10-Contact <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/contact.scss %}
-/* >>>>>>>>>>>>>> :: 3.11-Sections <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/sections.scss %}
-/* >>>>>>>>>>>>>> :: 3.12-Section Tags <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/section-tags.scss %}
-/* >>>>>>>>>>>>>> :: 3.13-Section Videos <<<<<<<<<<<<<<< */
-{% include_relative _3-modules/section-videos.scss %}
-/* >>>>>>>>>>>>>> :: 3.14-Section Gallery <<<<<<<<<<<<<<< */
-{% include_relative _3-modules/section-gallery.scss %}
-/* >>>>>>>>>>>>>> :: 3.15-Buttons <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/buttons.scss %}
-/* >>>>>>>>>>>>>> :: 3.16-Scroll Button Top <<<<<<<<<<<<<<< */
 {% include_relative _3-modules/scroll-button-top.scss %}
 
 

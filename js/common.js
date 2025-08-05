@@ -6,11 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
     body = document.querySelector('body'),
     menuToggle = document.querySelector(".hamburger"),
     menuList = document.querySelector(".main-nav"),
-    searchOpenButton = document.querySelectorAll(".search-button, .hero__search"),
-    searchCloseIcon = document.querySelector(".search__close"),
-    searchOverlay = document.querySelector(".search__overlay"),
-    searchInput = document.querySelector(".search__text"),
-    search = document.querySelector(".search"),
     toggleTheme = document.querySelector(".toggle-theme"),
     blogViewButton = document.querySelector(".blog__toggle"),
     splides = document.querySelector(".logos"),
@@ -19,22 +14,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   /* =======================================================
-  // Menu + Search + Theme Switcher + Blog List View
+  // Menu + Theme Switcher + Blog List View
   ======================================================= */
   menuToggle.addEventListener("click", () => {
     menu();
-  });
-
-  searchOpenButton.forEach(button => {
-    button.addEventListener("click", searchOpen);
-  });
-
-  searchCloseIcon.addEventListener("click", () => {
-    searchClose();
-  });
-
-  searchOverlay.addEventListener("click", () => {
-    searchClose();
   });
 
   if (blogViewButton) {
@@ -72,32 +55,6 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   });
-
-
-  // Search
-  function searchOpen() {
-    search.classList.add("is-visible");
-    body.classList.add("search-is-visible");
-    globalWrap.classList.add("is-active");
-    menuToggle.classList.remove("is-open");
-    menuList.classList.remove("is-visible");
-    setTimeout(function () {
-      searchInput.focus();
-    }, 250);
-  }
-
-  function searchClose() {
-    search.classList.remove("is-visible");
-    body.classList.remove("search-is-visible");
-    globalWrap.classList.remove("is-active");
-  }
-
-  document.addEventListener('keydown', function(e){
-    if (e.key == 'Escape') {
-      searchClose();
-    }
-  });
-
 
   // Theme Switcher
   if (toggleTheme && isToggleEnabled) {
@@ -181,18 +138,6 @@ document.addEventListener("DOMContentLoaded", function() {
       document.body.classList.remove("disable-animation");
     }, 100);
   };
-
-
-  // =====================
-  // Simple Jekyll Search
-  // =====================
-  SimpleJekyllSearch({
-    searchInput: document.getElementById("js-search-input"),
-    resultsContainer: document.getElementById("js-results-container"),
-    json: "/search.json",
-    searchResultTemplate: '{article}',
-    noResultsText: '<div class="no-results">No results found...</div>'
-  });
 
 
   /* =======================

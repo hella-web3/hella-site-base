@@ -6,7 +6,6 @@ logo: # You can add own logo. For example '/images/logo.png'.
 logo_dark:
 baseurl: /hella-site-base
 
-
 #-------------------------------
 # Color Scheme Settings
 color_scheme:
@@ -24,12 +23,6 @@ menu_settings:
     - url: '/contact/'
       title: 'Contact'
     - url: '/'
-      title: 'Sub Menu'
-      submenu:
-      - title: 'Videos'
-        url: '/videos/'
-      - title: 'Blog'
-        url: '/archive/'
 
 #-------------------------------
 # Author Settings
@@ -62,43 +55,11 @@ logos:
     - alt: "Placeholder"
       image: "/images/02.jpg"
 
-
 #-------------------------------
 # Section Blog Settings
 blog:
   enable: true
   blog_title: Topic Zero Blog
-
-#-------------------------------
-# Videos Section Settings
-videos_section:
-  enable: false
-  videos_section_title: Latest Videos
-
-
-#-------------------------------
-# Gallery Section Settings
-gallery_section:
-  enable: true
-  gallery_section_title: Previous Projects
-  gallery:
-    gallery_images:
-      - alt: 'Rest'
-        url: '/images/100.jpg'
-        caption: 'Small steps lead to big results.'
-      - alt: 'Lifestyle'
-        url: '/images/101.jpg'
-        caption: 'A peaceful moment captured during a serene evening.'
-      - alt: 'Hobby'
-        url: '/images/102.jpg'
-        caption: 'True friends are like stars — they shine brightest when the world feels dark.'
-      - alt: 'Computers'
-        url: '/images/103.jpg'
-        caption: 'Every click opens a new chapter in an endless story.'
-      - alt: 'Games'
-        url: '/images/104.jpg'
-        caption: 'Every level is a new opportunity to test your limits.'
-
 
 #-------------------------------
 # Newsletter Settings
