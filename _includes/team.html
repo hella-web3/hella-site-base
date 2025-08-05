@@ -3,11 +3,15 @@
 <section class="section section-team">
   <div class="container">
     <div class="row">
-      <div class="col col-12">
+      <div class="col col-12 col-d-12">
+
         {% if site.data.settings.team.team_title %}
-        <h2 class="team_title">{{ site.data.settings.team.team_title }}</h2>
+          <div>
+            <h2 class="team__title">{{ site.data.settings.team.team_title }}</h2>
+          </div>
         {% endif %}
-        <div class="team splide">
+
+          <div class="team splide">
           <div class="splide__track">
             <div class="team__inner splide__list">
               {% for team_image in site.data.settings.team.team_image %}

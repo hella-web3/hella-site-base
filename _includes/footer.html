@@ -6,6 +6,10 @@
       <div class="row">
 
         <div class="col col-4 col-d-12">
+            <img class="logo__image" src="{{ site.baseurl }}{{ site.data.settings.logo }}"
+                 alt="{{ site.data.settings.title }}">
+            <img class="logo__image__dark" src="{{ site.baseurl }}{{ site.data.settings.logo_dark }}"
+                 alt="{{ site.data.settings.title }}">
           <h3 class="footer__info__title">{{ site.data.settings.title }}</h3>
           {% if site.data.settings.footer_description %}
           <p class="footer__info__description">{{ site.data.settings.footer_description }}</p>

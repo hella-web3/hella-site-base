@@ -2,7 +2,7 @@
 # Site Settings
 title: Hella
 description: Hella Consulting - Web3 Native Fractional Engineering, DevRel, Digital Marketing & Strategy
-logo: /images/hella-logo-1.png
+logo: /images/hella-logo-4.png
 logo_dark: /images/hella-logo-3.jpg
 baseurl: /hella-site-base
 
@@ -47,7 +47,7 @@ hero:
 # Team
 team:
   enable: true
-  team_title: Our Team
+  team_title: Hella Teamwork
   team_image:
     - alt: "Chris Anatalio"
       image: "/images/chris1.jpg"
@@ -55,7 +55,8 @@ team:
       image: "/images/anna1.jpg"
     - alt: "Placeholder"
       image: "/images/02.jpg"
-
+    - alt: "Logo"
+      image: "/images/hella-logo-1.png"
 #-------------------------------
 # Section Blog Settings
 blog:
@@ -75,7 +76,7 @@ mailchimp:
 
 #-------------------------------
 # Footer Settings
-footer_description: Get inspired, find guidance and up-level your skillset!
+footer_description: Unleash your Web3 Idea with Hella
 
 
 #-------------------------------
