@@ -83,8 +83,9 @@ footer_description: Unleash your Web3 Idea with Hella
 #-------------------------------
 # Social Settings
 social:
-- {icon: "fa-brands fa-x-twitter", name: "Twitter", link: "https://x.com/CAnatalio"}
-- {icon: "fa-brands fa-github", name: "Github", link: "https://github.com/anataliocs"}
+- {icon: "fa-brands fa-x-twitter", name: "Twitter", link: "https://x.com/Hella_Web3"}
+- {icon: "fa-brands fa-github", name: "Github", link: "https://www.hella.website/"}
+- { icon: "fa-brands fa-linkedin", name: "Github", link: "https://www.linkedin.com/company/hella-web3" }
 - {icon: "fa-solid fa-rss", name: "Rss", link: "/feed.xml"}
 
 contact:
