@@ -2,6 +2,16 @@
 layout: default
 ---
 
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "{{ page.title | default: site.data.settings.title }}",
+        "description": "{{ page.description | default: site.data.settings.description }}",
+        "url": "{{ page.url | absolute_url }}"
+    }
+</script>
+
 <!-- begin page -->
 <div class="container">
   <div class="row">

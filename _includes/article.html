@@ -12,7 +12,7 @@
       {% endif %}
 
       <a class="article__image" href="{{ post.url | relative_url }}">
-        <img class="lazy" data-src="{{ post.image | relative_url }}" alt="{{post.title}}">
+        <img class="lazy" data-src="{{ post.image | relative_url }}" alt="Featured image for {{ post.title }}">
       </a>
     </div>
     {% endif %}

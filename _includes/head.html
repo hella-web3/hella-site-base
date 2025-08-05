@@ -3,10 +3,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }} | {{ site.data.settings.title }}{% else %}{{ site.data.settings.title }} | {{ site.data.settings.description }}{% endif %}</title>
-  <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.settings.description }}{% endif %}'>
+    <title>
+        {% if page.title %}
+        {{ page.title }} | {{ site.data.settings.title }}
+        {% else %}
+        {{ site.data.settings.title }} | {{ site.data.settings.description }}
+        {% endif %}
+    </title>
+    <meta name="description"
+          content='
+            {% if page.description %}
+              {{ page.description | strip_html | strip_newlines | truncate: 160 }}
+            {% elsif page.excerpt %}
+                {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
+            {% else %}
+              {{ site.data.settings.description | strip_html | strip_newlines | truncate: 160 }}
+            {% endif %}'>
+
   <meta name="author" content="{{ site.data.settings.site_author | default: site.data.settings.title }}">
-  <meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}{% else %}{{ site.data.settings.keywords }}{% endif %}">
+
+  <meta name="keywords" content="
+    {% if page.tags %}
+        {{ page.tags | join: ', ' }}
+    {% else %}
+        {{ site.data.settings.keywords }}
+    {% endif %}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href='{{ "/feed.xml" | relative_url }}'>
@@ -31,31 +52,36 @@
   {% if page.layout == 'post' %}
   <!-- Structured Data for Blog Posts -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "{{ page.title }}",
-    "description": "{% if page.description %}{{ page.description | strip_html | xml_escape }}{% else %}{{ page.excerpt | strip_html | xml_escape }}{% endif %}",
-    "image": "{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ site.data.settings.default_image | absolute_url }}{% endif %}",
-    "datePublished": "{{ page.date | date_to_xmlschema }}",
-    "dateModified": "{{ page.date | date_to_xmlschema }}",
-    "author": {
-      "@type": "Person",
-      "name": "{{ site.data.settings.site_author | default: site.data.settings.title }}"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "{{ site.data.settings.title }}",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "{{ '/favicon.png' | absolute_url }}"
+      {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "{{ page.title }}",
+          "description": "{% if page.description %}{{ page.description | strip_html | xml_escape }}{% else %}{{ page.excerpt | strip_html | xml_escape }}{% endif %}",
+          "image": "{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ site.data.settings.default_image | absolute_url }}{% endif %}",
+          "datePublished": "{{ page.date | date_to_xmlschema }}",
+          "dateModified": "{{ page.date | date_to_xmlschema }}",
+          "author": {
+              "@type": "Person",
+              "name": "{{ site.data.settings.site_author | default: site.data.settings.title }}"
+          },
+          "publisher": {
+              "@type": "Organization",
+              "name": "{{ site.data.settings.title }}",
+              "url": "{{ site.url }}",
+              "logo": {
+                  "@type": "ImageObject",
+                  "url": "{{ '/favicon.png' | absolute_url }}"
+              },
+              "sameAs": [
+                  "{{ site.data.settings.twitter_url }}",
+                  "{{ site.data.settings.facebook_url }}"
+              ]
+          },
+          "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "{{ page.url | replace:'index.html','' | absolute_url }}"
+          }
       }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "{{ page.url | replace:'index.html','' | absolute_url }}"
-    }
-  }
   </script>
   {% else %}
   <!-- Structured Data for Website -->
