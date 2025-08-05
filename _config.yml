@@ -4,12 +4,10 @@ title: Hella Consulting
 bio: "Web3 Native Fractional engineering, DevRel, Digital Marketing & Strategy"
 description: "Web3 Native Fractional engineering, DevRel, Digital Marketing & Strategy"
 reading_time: false
-logo: "assets/images/logo.png"
-background: "assets/images/bg.png"
 tiled_bg: false # Set this true if you want to tile your background image, otherwise it will be covered
 locale: en_US
-url: https://anataliocs.github.io
-baseurl: /hella-site-base
+url: https://www.hella.website
+baseurl: /
 
 #-------------------------------
 # Build Settings

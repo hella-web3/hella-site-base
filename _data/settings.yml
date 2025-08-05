@@ -1,10 +1,17 @@
 #-------------------------------
 # Site Settings
-title: Hella
+title: Hella Full-service consultancy with broad experience across Web2, Enterprise and Web3
 description: Hella Consulting - Web3 Native Fractional Engineering, DevRel, Digital Marketing & Strategy
 logo: /images/hella-logo-4.png
 logo_dark: /images/hella-logo-3.jpg
 baseurl: /hella-site-base
+
+#-------------------------------
+# SEO Settings
+site_author: Hella Consulting
+twitter_username: Hella_Web3
+default_image: /images/hella-logo-4.png
+keywords: Web3, Consulting, Engineering, DevRel, Digital Marketing, Strategy, Blockchain
 
 #-------------------------------
 # Color Scheme Settings
@@ -84,7 +91,7 @@ footer_description: Unleash your Web3 Idea with Hella
 # Social Settings
 social:
 - {icon: "fa-brands fa-x-twitter", name: "Twitter", link: "https://x.com/Hella_Web3"}
-- {icon: "fa-brands fa-github", name: "Github", link: "https://www.hella.website/"}
+- {icon: "fa-brands fa-github", name: "Github", link: "https://github.com/anataliocs/hella-site-base"}
 - { icon: "fa-brands fa-linkedin", name: "Github", link: "https://www.linkedin.com/company/hella-web3" }
 - {icon: "fa-solid fa-rss", name: "Rss", link: "/feed.xml"}
 

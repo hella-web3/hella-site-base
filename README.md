@@ -1,6 +1,8 @@
+[![Deployment](https://github.com/anataliocs/hella-site-base/actions/workflows/jekyll.yml/badge.svg)](https://github.com/anataliocs/hella-site-base/actions/workflows/jekyll.yml)
+
 # Hella Base Site
 
-Base site for Hella.
+Base site for [Hella](https://www.hella.website/).
 
 * * *
 
