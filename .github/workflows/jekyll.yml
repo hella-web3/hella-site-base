@@ -50,7 +50,7 @@ jobs:
         with:
           subject-path: './_site'
           show-summary: 'true'
-        if: ${{inputs.verify-build}}
+        if: ${{ inputs.verify-build }}
 
       - name: Build Pages
         run: echo "test" > ./_data/test.txt
@@ -63,7 +63,6 @@ jobs:
 
   # Deployment job
   deploy:
-    if: ${{ vars.PROD_DOMAIN }}
     env:
       URL: ${{ vars.PROD_DOMAIN }}
     environment:
@@ -72,6 +71,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Deployment Env
+        run: echo ${{ vars.PROD_DOMAIN }} && echo ${{ env.URL }}
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
