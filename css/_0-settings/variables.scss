@@ -40,6 +40,8 @@ $heading-letter-spacing: -0.2px;
 :root {
   --box-shadow-1: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
-  --box-shadow-color: 0 0 10px 10px rgb(247, 0, 119, 0.25),
-  0 0 10px 5px rgb(174, 0, 238, 0.25);
+  --box-shadow-color: 0 0 5px 5px rgb(247, 0, 119, 0.25),
+  0 0 10px 5px rgb(174, 0, 238, 0.25), 0 0 12px 5px rgb(255, 255, 255, 0.25);
+
+
 }

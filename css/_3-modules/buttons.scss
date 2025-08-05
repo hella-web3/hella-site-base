@@ -1,4 +1,5 @@
 /* Buttons */
+
 .button {
   position: relative;
   z-index: 1;
@@ -22,6 +23,8 @@
 
   &--primary {
     background: var(--gradient-color);
+    box-shadow: 0 0 2px 3px rgb(239, 151, 232, 0.25), 0 0 4px 5px rgb(239, 151, 232, 0.25);
+    opacity: 0.95;
 
     &::before {
       content: "";
@@ -34,12 +37,14 @@
       height: 100%;
       opacity: 0;
       will-change: transform;
-      transition: all 0.2s;
+      transition: all 0.3s;
       background: var(--gradient-hover);
     }
 
     &:hover {
       color: var(--button-color);
+      box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8, 0 0 20px #fff inset;
+      transform: scale(1.05);
 
       &:before {
         opacity: 1;
@@ -52,6 +57,7 @@
 
     &:hover {
       opacity: .95;
+      box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8, 0 0 20px #fff inset;
     }
   }
 

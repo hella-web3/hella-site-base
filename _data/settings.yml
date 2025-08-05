@@ -43,31 +43,27 @@ hero:
   hero_avatar: /images/chris1.jpg
   hero_avatar2: /images/anna1.jpg
   hero_avatar3: /images/02.jpg
-  hero_title: Hella Consulting
-  hero_subtitle: Web3 Native Fractional engineering, DevRel, Digital Marketing & Strategy
+  hero_title: Hella
+  hero_subtitle: Web3 Native Fractional Engineering, DevRel, Digital Marketing & Strategy
   hero_description: |
     Design.  Build.  Launch.  Hella is a full-service consultancy with broad experience across Web2, Enterprise and Web3.
   hero_image: /images/101.jpg
   hero_image_caption:
-  hero_button_text: Work with Us
+  hero_button_text: Let's Go
   hero_button_link: '/contact/'
 
 
 # Logos
 logos:
   enable: true
-  logos_title: Our Beloved Clients
+  logos_title: Our Team
   logo_image:
     - alt: "Game Boy"
-      image: "/images/1000.jpg"
+      image: "/images/chris1.jpg"
     - alt: "Super Nintendo"
-      image: "/images/1001.jpg"
-    - alt: "Keyboard"
-      image: "/images/1002.jpg"
+      image: "/images/anna1.jpg"
     - alt: "Headphones"
-      image: "/images/1003.jpg"
-    - alt: "Mouse"
-      image: "/images/1004.jpg"
+      image: "/images/02.jpg"
 
 
 #-------------------------------

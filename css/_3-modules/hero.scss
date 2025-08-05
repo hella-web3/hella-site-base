@@ -38,6 +38,12 @@
 .hero__right {
   max-width: 580px;
 
+  .row {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
   @media (max-width: $wide) {
     padding-left: 0;
   }
@@ -50,29 +56,10 @@
   }
 }
 
-.hero__avatar {
-
-  width: 120px;
-  height: 120px;
-  margin-bottom: 28px;
-  border-radius: 50%;
-  overflow: hidden;
-  will-change: transform;
-  user-select: none;
-  background: var(--background-color);
-  box-shadow: var(--box-shadow-1);
-
-  @media (max-width: $mobile) {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 15px;
-  }
-}
-
 .hero__icon {
   align-items: center;
   color: var(--heading-font-color);
-  margin: 45px 40px 40px 0;
+  margin: 20px 0 20px 0;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -86,26 +73,25 @@
 
 .hero__title {
   margin-bottom: 12px;
-  font-size: 68px;
-  line-height: 1;
   color: var(--heading-font-color);
   background: var(--gradient-color); /* Define your gradient colors and direction */
   -webkit-background-clip: text; /* Clip the background to the shape of the text (for WebKit browsers) */
   background-clip: text; /* Standard property for clipping background to text */
   -webkit-text-fill-color: transparent; /* Make the text transparent to reveal the background gradient (for WebKit browsers) */
   text-fill-color: transparent; /* Standard property for transparent text fill */
+  text-align: center;
 
-  @media (max-width: $wide) {
-    font-size: 56px;
-  }
-
-  @media (max-width: $tablet) {
-    font-size: 48px;
+  h1 {
+    font-size: 68px;
+    line-height: 1.3;
   }
 
   @media (max-width: $mobile) {
     margin-bottom: 8px;
-    font-size: 32px;
+
+    h1 {
+      font-size: 32px;
+    }
   }
 }
 
@@ -151,7 +137,6 @@
 
 .hero__button {
   margin-top: 16px;
-  box-shadow: var(--box-shadow-1);
 
   @media (max-width: $mobile) {
     margin-top: 8px;
