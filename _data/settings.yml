@@ -2,8 +2,8 @@
 # Site Settings
 title: Hella
 description: Hella Consulting - Web3 Native Fractional Engineering, DevRel, Digital Marketing & Strategy
-logo: # You can add own logo. For example '/images/logo.png'.
-logo_dark:
+logo: /images/hella-logo-1.png
+logo_dark: /images/hella-logo-3.jpg
 baseurl: /hella-site-base
 
 #-------------------------------
