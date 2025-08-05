@@ -1,0 +1,32 @@
+{% if site.data.settings.team.team_image and site.data.settings.team.enable == true %}
+<!-- begin section-team -->
+<section class="section section-team">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        {% if site.data.settings.team.team_title %}
+        <h2 class="team_title">{{ site.data.settings.team.team_title }}</h2>
+        {% endif %}
+        <div class="team splide">
+          <div class="splide__track">
+            <div class="team__inner splide__list">
+              {% for team_image in site.data.settings.team.team_image %}
+              <div class="team__image splide__slide">
+                <img src="{{ team_image.image | relative_url }}" alt="{{ team_image.alt }}" loading="eager">
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+          <div class="team_button">
+              <a href="{{ site.data.settings.baseurl }}/team/" class="button button--secondary">
+                  <i class="fa-solid fa-people-group"></i> &nbsp;
+                  Meet the Team
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section-team -->
+{% endif %}

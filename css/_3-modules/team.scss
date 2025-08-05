@@ -1,5 +1,5 @@
-/* Logos */
-.logos-title {
+/* Team */
+.team-title {
   margin-bottom: 0;
   font-size: 32px;
   text-align: center;
@@ -9,7 +9,7 @@
   }
 }
 
-.logos {
+.team {
   max-width: 680px;
   margin: 0 auto;
   margin-top: 24px;
@@ -19,13 +19,13 @@
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
   background: var(--background-color);
 
-  .logos__inner {
+  .team__inner {
     width: max-content;
     display: flex;
     flex-wrap: nowrap;
   }
 
-  .logos__image {
+  .team__image {
     position: relative;
     max-width: 100%;
     height: 140px;
@@ -47,13 +47,13 @@
   @media (max-width: $tablet) {
     max-width: 100%;
 
-    .logos__image {
+    .team__image {
       height: 100px;
     }
   }
 }
 
-.logos_button {
+.team_button {
   margin: 25px auto 10px auto;
   align-items: center;
   align-content: center;

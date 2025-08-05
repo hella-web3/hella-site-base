@@ -44,11 +44,11 @@ hero:
   hero_button_text: Let's Go
   hero_button_link: '/contact/'
 
-# Logos
-logos:
+# Team
+team:
   enable: true
-  logos_title: Our Team
-  logo_image:
+  team_title: Our Team
+  team_image:
     - alt: "Chris Anatalio"
       image: "/images/chris1.jpg"
     - alt: "Anna Lopatina"

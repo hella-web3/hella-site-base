@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Trading Alpha
-description: In recent years, indie games have transformed the gaming industry, offering unique experiences that often surpass mainstream titles in creativity and innovation.
+description: test
 date: 2024-10-19 15:01:35 +0300
 image: '/images/02.jpg'
 tags: [Trading]
 tags_color: '#ff4500'
 featured: true
 ---
+
+WIP
 
 ### Thank you!  
 

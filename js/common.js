@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     menuList = document.querySelector(".main-nav"),
     toggleTheme = document.querySelector(".toggle-theme"),
     blogViewButton = document.querySelector(".blog__toggle"),
-    splides = document.querySelector(".logos"),
+    splides = document.querySelector(".team"),
     imagesOverlay = document.querySelector('.images-overlay'),
     btnScrollToTop = document.querySelector(".top");
 
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   /* ============================
-  // Logos Slider
+  // Team Slider
   ============================ */
   if (splides) {
     new Splide(splides, {
