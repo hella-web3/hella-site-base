@@ -48,6 +48,7 @@ hero:
 team:
   enable: true
   team_title: Hella Teamwork
+  team_link: '/team/'
   team_image:
     - alt: "Chris Anatalio"
       image: "/images/chris1.jpg"

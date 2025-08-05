@@ -8,7 +8,7 @@
         <div class="col col-6 col-d-12">
           <div class="hero__left">
             <div class="hero__image">
-              <img class="lazy" data-src="{{ site.data.settings.baseurl }}{{ site.data.settings.hero.hero_image }}" alt="{{ site.data.settings.author.name }}'s Picture">
+              <img class="lazy" data-src="{{ site.data.settings.hero.hero_image | relative_url }}" alt="{{ site.data.settings.author.name }}'s Picture">
             </div>
             {% if site.data.settings.hero.hero_image_caption %}
             <div class="hero__image__caption">{{ site.data.settings.hero.hero_image_caption | markdownify | replace: '<p>' | replace: '</p>' }}</div>
@@ -49,7 +49,7 @@
 
                     {% if site.data.settings.hero.hero_button_text %}
                     <div class="hero__button">
-                        <a href="{{ site.data.settings.baseurl }}{{ site.data.settings.hero.hero_button_link }}" class="button button--primary">
+                        <a href="{{ site.data.settings.hero.hero_button_link | relative_url }}" class="button button--primary">
                             <i class="fa-solid fa-rocket fa-xl"></i> &nbsp;
                             {{ site.data.settings.hero.hero_button_text }}
                         </a>
