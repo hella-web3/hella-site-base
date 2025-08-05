@@ -72,25 +72,34 @@
 }
 
 .hero__title {
-  margin-bottom: 12px;
+  margin: 12px auto 12px auto;
   color: var(--heading-font-color);
+  text-align: center;
+  width: fit-content;
   background: var(--gradient-color); /* Define your gradient colors and direction */
   -webkit-background-clip: text; /* Clip the background to the shape of the text (for WebKit browsers) */
   background-clip: text; /* Standard property for clipping background to text */
   -webkit-text-fill-color: transparent; /* Make the text transparent to reveal the background gradient (for WebKit browsers) */
   text-fill-color: transparent; /* Standard property for transparent text fill */
-  text-align: center;
+
+  hr {
+    margin: 0;
+    height: 2px;
+    background: var(--gradient-color);
+  }
 
   h1 {
     font-size: 68px;
     line-height: 1.3;
+    margin: 0;
   }
 
   @media (max-width: $mobile) {
-    margin-bottom: 8px;
+    margin: 8px auto 8px auto;
 
     h1 {
       font-size: 32px;
+      line-height: 1.2;
     }
   }
 }
@@ -110,6 +119,15 @@
 
 .hero__description {
   margin-bottom: 16px;
+
+  strong {
+    line-height: 1.2;
+    background: var(--gradient-color); /* Define your gradient colors and direction */
+    -webkit-background-clip: text; /* Clip the background to the shape of the text (for WebKit browsers) */
+    background-clip: text; /* Standard property for clipping background to text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to reveal the background gradient (for WebKit browsers) */
+    text-fill-color: transparent;
+  }
 
   p {
     margin-bottom: 16px;
@@ -153,7 +171,7 @@
   position: relative;
   transform: translate(0);
   width: 100%;
-  height: 634px;
+  height: 534px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: var(--box-shadow-1);

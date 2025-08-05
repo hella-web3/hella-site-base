@@ -27,7 +27,9 @@
 
                       <div class="hero__title">
                           <h1>{{ site.data.settings.hero.hero_title }}</h1>
+                          <hr />
                       </div>
+
                     {% endif %}
 
                     {% if site.data.settings.hero.hero_subtitle %}
@@ -36,6 +38,11 @@
 
                     {% if site.data.settings.hero.hero_description %}
                     <div class="hero__description">
+                        <strong><i class="fa-solid fa-marker"></i>  Design </strong>
+                        <strong><i class="fa-solid fa-code"></i>  Build </strong>
+                        <strong><i class="fa-solid fa-rocket"></i>  Launch </strong>
+                        <strong><i class="fa-solid fa-maximize"></i>  Scale </strong>
+
                         {{ site.data.settings.hero.hero_description | markdownify }}
                     </div>
                     {% endif %}
@@ -43,7 +50,7 @@
                     {% if site.data.settings.hero.hero_button_text %}
                     <div class="hero__button">
                         <a href="{{ site.data.settings.baseurl }}{{ site.data.settings.hero.hero_button_link }}" class="button button--primary">
-                            <i class="fa-solid fa-handshake fa-2xl"></i> &nbsp;
+                            <i class="fa-solid fa-rocket fa-xl"></i> &nbsp;
                             {{ site.data.settings.hero.hero_button_text }}
                         </a>
                     </div>
