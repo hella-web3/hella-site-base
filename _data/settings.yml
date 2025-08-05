@@ -1,17 +1,10 @@
 #-------------------------------
 # Site Settings
-title: Hella Full-service consultancy with broad experience across Web2, Enterprise and Web3
+title: Hella
 description: Hella Consulting - Web3 Native Fractional Engineering, DevRel, Digital Marketing & Strategy
 logo: /images/hella-logo-4.png
 logo_dark: /images/hella-logo-3.jpg
-baseurl: /hella-site-base
-
-#-------------------------------
-# SEO Settings
-site_author: Hella Consulting
-twitter_username: Hella_Web3
-default_image: /images/hella-logo-4.png
-keywords: Web3, Consulting, Engineering, DevRel, Digital Marketing, Strategy, Blockchain
+baseurl:
 
 #-------------------------------
 # Color Scheme Settings
@@ -33,10 +26,18 @@ menu_settings:
       title: 'Blog'
 
 #-------------------------------
+# SEO Settings
+site_author: Hella Consulting
+twitter_username: Hella_Web3
+default_image: /images/hella-logo-4.png
+keywords: Web3, Consulting, Engineering, DevRel, Digital Marketing, Strategy, Blockchain
+
+
+#-------------------------------
 # Author Settings
 author:
   author_name: Chris Anatalio
-  author_avatar: /images/chris1.jpg
+  author_avatar: images/chris1.jpg
 
 
 #-------------------------------

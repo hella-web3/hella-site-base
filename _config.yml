@@ -7,7 +7,7 @@ reading_time: false
 tiled_bg: false # Set this true if you want to tile your background image, otherwise it will be covered
 locale: en_US
 url: https://www.hella.website
-baseurl: /
+baseurl:
 
 #-------------------------------
 # Build Settings

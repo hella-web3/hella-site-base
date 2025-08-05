@@ -10,3 +10,5 @@ _site
 /.idea/vcs.xml
 /.devcontainer/.features.temp.dockerfile
 /.idea/inspectionProfiles/Project_Default.xml
+/SEO_IMPROVEMENTS.md
+/robots.txt
