@@ -63,16 +63,12 @@ jobs:
 
   # Deployment job
   deploy:
-    env:
-      URL: ${{ vars.PROD_DOMAIN }}
     environment:
       name: github-pages
-      url: ${{ env.URL }}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deployment Env
-        run: echo ${{ vars.PROD_DOMAIN }} && echo ${{ env.URL }}
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
