@@ -22,7 +22,6 @@ menu_settings:
       title: 'Team'
     - url: '/contact/'
       title: 'Contact'
-    - url: '/'
 
 #-------------------------------
 # Author Settings
