@@ -1,5 +1,14 @@
 /* Hero */
 
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
 .hero {
   margin-bottom: 70px;
 
@@ -59,10 +68,13 @@
 .hero__icon {
   align-items: center;
   color: var(--heading-font-color);
-  margin: 20px 0 20px 0;
+  margin: 25px 0 25px 0;
   text-align: center;
   display: flex;
   justify-content: center;
+  text-shadow: 0 0 10px yellow, 0 0 20px yellow;
+  animation: glow 3s ease-in-out infinite;
+  filter: saturate(1.5);
 
   @media (max-width: $mobile) {
     font-size: 1.25em;
@@ -95,10 +107,10 @@
   }
 
   @media (max-width: $mobile) {
-    margin: 8px auto 8px auto;
+    margin: 10px auto 10px auto;
 
     h1 {
-      font-size: 32px;
+      font-size: 46px;
       line-height: 1.2;
     }
   }
@@ -199,16 +211,29 @@
 
 }
 
-.hero__image__caption {
-  margin-top: 12px;
+.hero__offerings {
+  margin: 20px auto 20px auto;
   font-family: $heading-font-family;
-  font-size: 14px;
-  line-height: 1.4;
-  text-align: center;
-  color: var(--text-alt-color);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--white);
 
-  a:not([class]) {
-    text-decoration: underline;
-    text-underline-offset: 2px;
+  hr {
+    margin: 25px 0 20px 0;
+    height: 1px;
+    opacity: 0.4;
+    background: var(--gradient-color);
+  }
+
+  i {
+    opacity: 0.8;
+    margin: 5px 10px 5px 10px;
+    text-shadow: 0 0 5px yellow, 0 0 10px yellow;
+    animation: glow 4s linear infinite;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+    font-size: 18px;
   }
 }
