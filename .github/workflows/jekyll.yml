@@ -1,5 +1,5 @@
 
-name: Pages Deployment
+name: Prod Squarespace Pages Deployment
 
 on:
   # Allows you to run this workflow manually from the Actions tab
@@ -65,13 +65,14 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ env.PROD_DOMAIN }}
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
 
 
