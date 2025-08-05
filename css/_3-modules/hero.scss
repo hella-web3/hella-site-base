@@ -208,28 +208,24 @@
       padding-bottom: 75%;
     }
   }
-
 }
 
 .hero__offerings {
   margin: 20px auto 20px auto;
-  font-family: $heading-font-family;
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--white);
+  font-size: 24px;
+  color: var(--heading-font-color);
 
   hr {
-    margin: 25px 0 20px 0;
+    margin: 25px 0 15px 0;
     height: 1px;
     opacity: 0.4;
     background: var(--gradient-color);
   }
 
   i {
-    opacity: 0.8;
-    margin: 5px 10px 5px 10px;
-    text-shadow: 0 0 5px yellow, 0 0 10px yellow;
-    animation: glow 4s linear infinite;
+    margin: 5px 5px 5px 5px;
+    text-shadow: 0 0 1px yellow, 0 0 5px yellow;
+    animation: glow 5s linear infinite;
   }
 
   @media (max-width: $mobile) {
