@@ -63,9 +63,12 @@ jobs:
 
   # Deployment job
   deploy:
+    if: ${{ vars.PROD_DOMAIN }}
+    env:
+      URL: ${{ vars.PROD_DOMAIN }}
     environment:
       name: github-pages
-      url: ${{ env.PROD_DOMAIN }}
+      url: ${{ env.URL }}
     runs-on: ubuntu-latest
     needs: build
     steps:
