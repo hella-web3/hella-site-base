@@ -15,11 +15,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  &.search-is-visible {
-    overflow: hidden;
-    -webkit-overflow-scrolling: auto;
-  }
-
   &.disable-animation {
     *, *::after, *::before {
       transition: none !important;
@@ -192,8 +187,7 @@ img {
   vertical-align: middle;
 }
 
-img,
-.gallery {
+img {
   &+em {
     display: block;
     margin-top: 12px;

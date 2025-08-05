@@ -25,6 +25,6 @@ gem install bundler -v 2.6.7
 
 Run app
 ```
-bundle install && bundle exec jekyll serve
+bundle install && bundle exec jekyll serve --livereload
 ``` 
 

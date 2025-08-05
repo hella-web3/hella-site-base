@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
   'use strict';
 
   const html = document.querySelector('html'),
-    globalWrap = document.querySelector('.global-wrap'),
-    body = document.querySelector('body'),
     menuToggle = document.querySelector(".hamburger"),
     menuList = document.querySelector(".main-nav"),
     toggleTheme = document.querySelector(".toggle-theme"),
