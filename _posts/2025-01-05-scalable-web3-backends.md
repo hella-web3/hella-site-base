@@ -1,32 +1,31 @@
 ---
 layout: post
-title: Scalable Web3 Backends
-description: Starting out in programming is thrilling, yet the number of languages available makes it difficult to decide where to begin.
-date: 2025-01-05 15:01:35 +0300
-image: '/images/02.jpg'
-tags: [Web3 Backend]
+title: Pure CSS Animated Gradient Background
+description: You can do amazing things with pure CSS nowadays, including animations without any Javascript.
+date: 2025-08-05 9:29:35 +0300
+image: '/images/hella-bg-1.jpg'
+tags: [ CSS-tricks ]
 tags_color: '#4643ec'
+featured: true
 ---
 
 WIP
 
-### Overview of popular languages
+### CSS Tricks - Pure CSS Animated Gradient Background
 
-Python is often recommended for beginners because of its readable syntax and broad applications in data science, machine learning, and backend development. Its growing popularity has led to a massive community, filled with tutorials, forums, and projects to explore. While Python’s simplicity is an advantage, it’s also highly powerful and can handle complex programming needs as you progress.
+Let's take a look at how to create a animated background with no Javascript
 
 {: .tip }
-Programming languages and frameworks evolve quickly.
+Keep your page load fast with Pure CSS animations.
 
-> The true test of AI isn’t how advanced it becomes, but how well we manage its impact on humanity.
+> The best code is no code.
 
-Programming also requires problem-solving skills and the ability to debug and troubleshoot. When you’re stuck, resources like Stack Overflow, GitHub, and Reddit can be lifesavers, offering advice from seasoned developers. Tackling real-world problems or coding challenges can deepen your understanding and prepare you for more advanced projects.
+### Live Example on CodePen
 
-### Best practices for collaboration in Git
-
-Once you've learned the basics, start with small projects. Creating a to-do list app, a calculator, or even a basic game can help solidify your skills. For example, Python is great for data visualization, while JavaScript shines in building interactive web pages. These hands-on experiences reinforce concepts and offer a sense of accomplishment.
+Now Let's check out a live example!
 
 {: .note }
-Useful information that users should know, even when skimming content.
+CodePen is an amazing free resource for developers!
 
 <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="KwdWQqB" data-pen-title="🌈 Pure CSS Animated Gradient Background" data-user="anataliocs" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/anataliocs/pen/KwdWQqB">

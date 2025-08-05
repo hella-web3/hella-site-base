@@ -2,10 +2,10 @@
 layout: page
 title: Hella Team
 permalink: /team/
-image: '/images/101.jpg'
+image: '/images/hella-bg-2.jpg'
 ---
 
-The Team at Hella has decades of experience across Web2, Enterprise, Silicon Valley Startups and Web3.
+The Team at Hella has extensive experience across Web2, Enterprise, Silicon Valley Startups and Web3.
 > People, Product, Passion
 
 ----
