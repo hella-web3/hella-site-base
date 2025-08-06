@@ -16,7 +16,7 @@ color_scheme:
 # Navigation Settings
 menu_settings:
   menu_items:
-    - url: '/services/'
+    - url: '/web3-consultant-service-offerings/'
       title: 'Services'
     - url: '/team/'
       title: 'Team'
@@ -29,8 +29,8 @@ menu_settings:
 # SEO Settings
 site_author: Hella Consulting
 twitter_username: Hella_Web3
-default_image: /images/hella-logo-4.png
-keywords: Web3, Consulting, Engineering, DevRel, Digital Marketing, Strategy, Blockchain
+default_image: /images/hella-bg-a.jpg
+keywords: Web3, Consulting, Engineering, DevRel, Digital Marketing, Strategy, Blockchain, Crypto, Cryptocurrency
 
 
 #-------------------------------
@@ -62,8 +62,6 @@ team:
       image: "/images/chris1.jpg"
     - alt: "Anna Lopatina"
       image: "/images/anna1.jpg"
-    - alt: "Placeholder"
-      image: "/images/02.jpg"
     - alt: "Logo"
       image: "/images/hella-logo-1.png"
 #-------------------------------
@@ -85,7 +83,7 @@ mailchimp:
 
 #-------------------------------
 # Footer Settings
-footer_description: Unleash your Web3 Idea with Hella
+footer_description: Unleash your Web3 Ideas with Hella
 
 #-------------------------------
 # Social Settings
@@ -99,11 +97,8 @@ social:
 
 contact:
   form_id: xwpqrreq
-  button_text: Let's go
+  button_text: LFG!
 
-
-#-------------------------------
-# Comment Section (Disqus)
 disqus:
   enable: true
   disqus_identifier: dsq-count-scr
