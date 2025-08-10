@@ -3,7 +3,7 @@
 
 <div align="center">
 
-# Hella Main Site 
+# Hella Main Web Site 
 
 [![Deployment](https://github.com/anataliocs/hella-site-base/actions/workflows/jekyll.yml/badge.svg)](https://github.com/anataliocs/hella-site-base/actions/workflows/jekyll.yml)
 
@@ -15,7 +15,7 @@ Base web site for [Hella](https://www.hella.website/).  Built with Jekyll and ba
 
 ## 🚀 Overview
 
-**Hella Site Base** is a web3-focused website with best practices for performance, security, developer experience, and SEO.  Fast, lean and too the point.
+**Hella Site Base** is a web3-focused website with best practices for performance, security, developer experience, and SEO.  Fast, lean and to the point.
 
 ---
 
@@ -42,7 +42,7 @@ gem install bundler -v 2.6.7
 
 ## 🛠️ Usage
 
-Run app
+Run app with live reloading
 ```
 bundle install && bundle exec jekyll serve --livereload
 ``` 
@@ -74,5 +74,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 <div align="center">
 
 _Made with ❤️ by the Hella-Web3 team_
+
+Accelerating the transition to a Web3 future.
 
 </div>
