@@ -7,7 +7,7 @@
     if (!gaId) { return; }
     var s = document.createElement('script');
     s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(gaId);
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
     s.onload = function(){
       window.dataLayer = window.dataLayer || [];
       function gtag(){ dataLayer.push(arguments); }
