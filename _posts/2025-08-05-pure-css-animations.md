@@ -18,16 +18,19 @@ Keep your code simple & manageable, with super fast page loads leveraging Pure C
 
 Build a lean, mean site without the hassle and overhead of node.js, npm, react/next.js, Vercel etc.
 
-> The best code is no code at all. - Jeff Atwood(Founder of StackOverflow)
+> The best code is no code at all. 
+> 
+> <cite>- Jeff Atwood(Founder of StackOverflow)</cite>
 
 ---
 
 ### Live Example on CodePen
+#### Animated Gradient Background
 
-Now let's check out a live example!
+Now let's check out a live example on [CodePen](https://codepen.io/anataliocs/pen/KwdWQqB)!
 
 {: .note }
-CodePen is an amazing free resource for developers!
+[CodePen](https://codepen.io) is an amazing free resource for developers!  Check out [CodePen Challenges](https://codepen.io/challenges) to learn more!
 
 <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="KwdWQqB" data-pen-title="🌈 Pure CSS Animated Gradient Background" data-user="anataliocs" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/anataliocs/pen/KwdWQqB">
@@ -36,13 +39,22 @@ CodePen is an amazing free resource for developers!
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
+<i>https://codepen.io/anataliocs/pen/KwdWQqB</i>
+
 You can build super slick features and animations for your site + blog with just Jekyll, Vanilla JS and CSS/Sass hosted on Github Pages(Like this site!) 
 
 [https://github.com/hella-web3/hella-site-base](https://github.com/hella-web3/hella-site-base)
 
-They CSS `@keyframes` rule is the secret sauce for these slick animations that don't require a single line of JS!
+{: .tip }
+Open this site in a [Github Codespace Devcontainer](https://codespaces.new/hella-web3/hella-site-base) to check out how it works!
 
-**Example below:**
+The CSS `@keyframes` rule is the secret sauce for these slick animations that don't require a single line of JS!
+
+{: .tip }
+[Keyframes](http://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) control intermediate steps at explicitly set breakpoints in the animation sequence.  They steps are called waypoints and give more control then transitions.
+
+
+##### Keyframes Example:
 ```css
 @keyframes gradient {
 	0% {
@@ -57,24 +69,39 @@ They CSS `@keyframes` rule is the secret sauce for these slick animations that d
 }
 ```
 
-Basically, you define specific CSS styles that change over time as the animation progresses.  So you can change the angle, position, color or really anything over the course of
-an animation's duration.  Paired with clever use of attributes like `linear-gradient` or using `::before` or after `::after` pseudo-elements with properties like `box-shadow`, this gives you an incredible amount
-of power and versatility in creating novel animations and interactivity that can really make your UIs that much more intuitive and just plain fun to use.
+Basically, you define specific CSS styles that change over time as the animation progresses.  
+
+So you can change the angle, position, color or really anything over the course of
+an animation's duration.  Paired with clever use of attributes like `linear-gradient` or using `::before` or after `::after` pseudo-elements with properties like `box-shadow`.
+
+This gives you an incredible amount of power and versatility in creating novel animations and interactivity that can really make your UIs that much more intuitive and just plain fun to use.
 
 When a UI just clicks for users, it really is a joy!
 
 > Programming isn't about what you know; it's about what you can figure out.
+>
+> <cite>- Chris Pine </cite>
 
-And there is just something so intuitive, fun and powerful about figuring out new ways to create cool new effects with just plain old CSS.
+There is just something so intuitive, fun and powerful about figuring out new ways to create cool new effects with just plain old CSS.
 
 {: .note }
-Not that long ago it was a pain just to get stuff centered lol
+Not that long ago it was a pain just to get stuff centered.
+
+![css.gif](../images/css.gif)
 
 ----
 
 ### Neon Button Animations
+#### Satisfying Unique Button Hover Animations
 
 You have so much creative freedom to create all different types of animations and behaviors that don't just look cool but also contribute to a intuitive UX!
+
+In this example, for the first button, we use the `:hover` pseudo class along with `box-shadow` to create a simple glow mouse-over hover.  
+
+The more complex example mix and match `:before`, `:after` as well as `:hover:before` and `:hover:after`
+to create more unique effects leveraging `transition`, `box-shadow`, `background-color` and other CSS attributes.
+
+**Live CodePen Example**
 
 <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="ZYbKXqV" data-pen-title="Neon Button Animation" data-user="anataliocs" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/anataliocs/pen/ZYbKXqV">
@@ -83,9 +110,26 @@ You have so much creative freedom to create all different types of animations an
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
+<i>https://codepen.io/anataliocs/pen/ZYbKXqV</i>
+
+##### Box Shadow On-Hover Example:
+```css
+.btn-1 {
+  border: none;
+  background-color: #ff9aff;
+  box-shadow: 0 0 5px #ef97e8;
+}
+.btn-1:hover {
+   box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8, 0 0 20px #fff inset;
+}
+```
+
+The opportunities for creativity are endless!
+
 ----
 
 ### Much more Fun then a Plain Old Spinner
+#### Eye-Catching Loading Animations with Pure CSS
 
 You can get super creative with really expressive loading animations.
 
@@ -111,15 +155,19 @@ This is probably the coolest thing I've seen though.  Simulating an actual IDE w
 
 Think twice before spinning up a React app next time you have a static site to build.  
 
-I've been a long-time fan of Gatsby... but this super lean stack has really won me over :)
+I've been a long-time fan of [Gatsby](https://www.gatsbyjs.com/) but this super lean stack has really won me over :)
 
-> Clean code is code that is easy to read, easy to understand, and easy to modify. - Robert C. Martin(Uncle Bob)
-
+> Clean code is code that is easy to read, easy to understand, and easy to modify. 
+> 
+> <cite>- Robert C. Martin(Uncle Bob)</cite>
+ 
 ----
 
 ### Macbook Stickers as Dynamic Interactive Elements
 
-At first, glance, it just looks like a img of a Macbook.  But hover over a sticker and you'll see each one is actually a interactive element!
+At first, glance, it just looks like a img of a Macbook.  
+
+But hover over a sticker and you'll see each one is actually a interactive element!
 
 <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="LEpWQNP" data-pen-title="Personal Concept" data-user="anataliocs" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/anataliocs/pen/LEpWQNP">
@@ -128,14 +176,18 @@ At first, glance, it just looks like a img of a Macbook.  But hover over a stick
 </p>
 <script async src="https://public.codepenassets.com/embed/index.js"></script>
 
+<i>https://codepen.io/anataliocs/pen/LEpWQNP</i>
+
 I hope you had as much fun as I did walking through the amazing creativity present in our OSS community <3
 
 It's truly never been a better time to be a developer :D
 
 
 {: .note }
-Hats off to Mozilla and the OSS community for making this stuff happen and hammering away at this stuff until they just really nail it from a developer experience standpoint.
+Hats off to [Mozilla](https://developer.mozilla.org/en-US/) and the OSS community for making this stuff happen and hammering away at this stuff until they just really nail it from a developer experience standpoint.
 Such a joy to work with and spin up a cute, animated, responsive site in just a couple days :D
+
+Thanks for reading!  Check out more [CodePen here](https://codepen.io/anataliocs)!
 
 ----
 

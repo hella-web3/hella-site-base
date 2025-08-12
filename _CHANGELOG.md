@@ -11,3 +11,9 @@
   - Improved image accessibility with lazy loading and dimensions
   - Added OpenGraph and Twitter Card support
   - Created robots.txt file
+
+## [0.0.3] - 2025-08-11
+
+- Updated beta release: https://www.hella.website/
+- Updates to content
+- Updates to blog article look and feel

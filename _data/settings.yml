@@ -37,7 +37,7 @@ keywords: Web3, Consulting, Engineering, DevRel, Digital Marketing, Strategy, Bl
 # Author Settings
 author:
   author_name: Chris Anatalio
-  author_avatar: images/chris1.jpg
+  author_avatar: images/chris1-web3-engineer.jpg
 
 
 #-------------------------------
@@ -59,7 +59,7 @@ team:
   team_link: '/team/'
   team_image:
     - alt: "Chris Anatalio"
-      image: "/images/chris1.jpg"
+      image: "/images/chris1-web3-engineer.jpg"
     - alt: "Anna Lopatina"
       image: "/images/anna1.jpg"
     - alt: "Logo"
@@ -83,7 +83,7 @@ mailchimp:
 
 #-------------------------------
 # Footer Settings
-footer_description: Unleash your Web3 Ideas with Hella
+footer_description: Unleash the potential of your Web3 On-chain Startup with Hella
 
 #-------------------------------
 # Social Settings

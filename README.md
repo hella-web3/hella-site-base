@@ -17,23 +17,34 @@ Base web site for [Hella](https://www.hella.website/).  Built with Jekyll and ba
 
 **Hella Site Base** is a web3-focused website with best practices for performance, security, developer experience, and SEO.  Fast, lean and to the point.
 
+**Tech Stack:**
+- Jekyll
+- CSS/Sass
+- Javascript
+- Github Actions
+- Devcontainers
+
+And that's it!
+
 ---
 
 ## 📦 Installation
 
-Install rbenv
+Config and setup.
+
+**Install rbenv**
 ```terminaloutput
 brew install rbenv
 rbenv init
 ```
 
-Install ruby
+**Install ruby**
 ```terminaloutput
 rbenv install 3.4.3
 rbenv global 3.4.3
 ```
 
-Update bundler
+**Update bundler**
 ```terminaloutput
 gem install bundler -v 2.6.7
 ```
@@ -42,7 +53,9 @@ gem install bundler -v 2.6.7
 
 ## 🛠️ Usage
 
-Run app with live reloading
+Local dev instructions.
+
+**Run app with live reloading**
 ```
 bundle install && bundle exec jekyll serve --livereload
 ``` 
@@ -68,6 +81,8 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 - Twitter: [@hella_web3](https://twitter.com/hella_web3)
 - [LinkedIn](https://www.linkedin.com/company/hella-web3)
 - [Youtube](https://www.youtube.com/@hella-web3)
+- [Dev.to](https://dev.to/hella-web3)
+- [Github](https://github.com/hella-web3)
 
 ---
 
@@ -76,5 +91,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 _Made with ❤️ by the Hella-Web3 team_
 
 Accelerating the transition to a Web3 future.
+
+Release: 0.0.3
 
 </div>
