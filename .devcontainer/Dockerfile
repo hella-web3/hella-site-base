@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/ruby:3.2
+FROM mcr.microsoft.com/devcontainers/ruby:3.4
 ENV DEBIAN_FRONTEND=noninteractive \
     BUNDLE_PATH=~/.bundle \
     BUNDLE_PATH_SYSTEM=true \
