@@ -1,0 +1,8 @@
+---
+layout: null
+---
+{% assign posts = site.posts | where:"sitemap","true" %}{% for post in posts %}
+{{ site.url | strip }}{{ post.url | strip }}{% endfor %}
+{% assign pages = site.pages | where:"sitemap","true"  %}{% for page in pages %}
+{{ site.url |strip }}{{ page.url | strip }}{% endfor %}
+{{ site.url | strip }}
