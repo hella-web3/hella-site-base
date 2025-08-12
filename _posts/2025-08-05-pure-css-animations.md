@@ -4,7 +4,7 @@ title: Pure CSS Animated Gradient Background and More!
 description: You can do amazing things with pure CSS nowadays, including animations without any Javascript.
 date: 2025-08-05 9:29:35 +0300
 image: '/images/hella-bg-1.jpg'
-tags: [ CSS-tricks ]
+tags: [ CSS-tricks, Animation ]
 tags_color: '#4643ec'
 featured: true
 ---

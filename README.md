@@ -7,7 +7,9 @@
 
 [![Deployment](https://github.com/anataliocs/hella-site-base/actions/workflows/jekyll.yml/badge.svg)](https://github.com/anataliocs/hella-site-base/actions/workflows/jekyll.yml)
 
-Base web site for [Hella](https://www.hella.website/).  Built with Jekyll and barebones pure CSS/Sass and Javascript.
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=hella-web3/hella-site-base)
+
+Base website for [Hella](https://www.hella.website/).  Built with Jekyll and barebones pure CSS/Sass and Javascript.
 
 </div>
 
