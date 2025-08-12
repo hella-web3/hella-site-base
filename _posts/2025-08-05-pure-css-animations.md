@@ -7,6 +7,7 @@ image: '/images/hella-bg-1.jpg'
 tags: [ CSS-tricks, Animation ]
 tags_color: '#4643ec'
 featured: true
+sitemap: true
 ---
 
 ### CSS Tricks - Pure CSS Animated Gradient Background

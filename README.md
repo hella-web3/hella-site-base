@@ -66,6 +66,20 @@ Visit [ http://127.0.0.1:4000]( http://127.0.0.1:4000) after starting the server
 
 ---
 
+## 🛠️ Build
+
+GH Actions.
+
+**Run build**
+```
+gh workflow run jekyll.yml
+gh run list --workflow="jekyll.yml"
+``` 
+
+Visit [https://www.hella.website/](https://www.hella.website/) after workflow run completes.
+
+---
+
 ## 🤝 Contributing
 
 We welcome contributions! Please check our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
