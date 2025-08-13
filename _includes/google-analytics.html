@@ -39,12 +39,11 @@
       gtag("set", "ads_data_redaction", true);
       gtag("set", "url_passthrough", false);
 
-      Cookiebot.renew();
+      Cookiebot.show(false, false);
 
       window.addEventListener('CookiebotOnAccept', function (e) {
-          console.log(Cookiebot.consent.marketing);
-
               console.log("CookiebotOnAccept Event Triggered");
+              console.log(e);
 
               gtag("consent", "update", {
                   ad_storage: "granted",
@@ -65,11 +64,7 @@
 
           };
           document.head.appendChild(s);
-
       }, false);
-
-
-
 
   })();
 </script>
