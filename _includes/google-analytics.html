@@ -39,18 +39,12 @@
       gtag("set", "ads_data_redaction", true);
       gtag("set", "url_passthrough", false);
 
-
-
-      Cookiebot.getScript('https://consent.cookiebot.com/fe011b35-9177-4947-b0c2-e73b66c3b222/cd.js', true,
-
-          function(err, script) {
-                console.log("Dialog Displayed");
-          }
-      )
+      Cookiebot.renew();
 
       window.addEventListener('CookiebotOnAccept', function (e) {
           console.log(Cookiebot.consent.marketing);
-              console.log("CookiebotOnAccept");
+
+              console.log("CookiebotOnAccept Event Triggered");
 
               gtag("consent", "update", {
                   ad_storage: "granted",
@@ -62,23 +56,20 @@
                   security_storage: "granted"
               });
 
+          console.log(CookieConsent);
+
+          const s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
+          s.onload = function(){
+
+          };
+          document.head.appendChild(s);
+
       }, false);
 
-      function CookiebotCallback_OnAccept() {
-
-          console.log("CookiebotCallback_OnAccept");
-      }
 
 
-    const s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
-    s.onload = function(){
-
-
-
-    };
-    document.head.appendChild(s);
 
   })();
 </script>
