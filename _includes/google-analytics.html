@@ -21,6 +21,21 @@
       window.gtag = gtag;
       gtag('js', new Date());
       gtag('config', gaId, { anonymize_ip: true });
+
+        gtag("consent", "update", {
+            ad_storage: "granted",
+            ad_user_data: "granted",
+            ad_personalization: "granted",
+            analytics_storage: "granted",
+            functionality_storage: "granted",
+            personalization_storage: "granted",
+            security_storage: "granted",
+            wait_for_update: 500,
+        });
+
+        gtag("set", "ads_data_redaction", true);
+        gtag("set", "url_passthrough", false);
+
     };
     document.head.appendChild(s);
 
@@ -33,19 +48,7 @@
 
 
     // 7 Consent Update
-      gtag("consent", "update", {
-          ad_storage: "granted",
-          ad_user_data: "granted",
-          ad_personalization: "granted",
-          analytics_storage: "granted",
-          functionality_storage: "granted",
-          personalization_storage: "granted",
-          security_storage: "granted",
-          wait_for_update: 500,
-      });
 
-      gtag("set", "ads_data_redaction", true);
-      gtag("set", "url_passthrough", false);
 
       // 6 cookie_consent_marketing
       //dataLayer.push({event: "cookie_consent_marketing", gtm.uniqueEventId: 11});
