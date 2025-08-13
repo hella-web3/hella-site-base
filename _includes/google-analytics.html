@@ -6,7 +6,6 @@
 
     var dnt = navigator.doNotTrack == '1' || window.doNotTrack == '1' || navigator.msDoNotTrack == '1';
 
-
       window.dataLayer = window.dataLayer || [];
       function gtag(){ dataLayer.push(arguments); }
       window.gtag = gtag;
@@ -22,26 +21,36 @@
           wait_for_update: 500,
       });
 
+      console.log("Default consent set");
+      console.log(dataLayer);
+
+      var gaId;
+      if (dnt) {
+          gaId = '{{ site.data.settings.google_analytics_dnt }}';
+      }
+      else {
+          gaId = '{{ site.data.settings.google_analytics }}';
+      }
+      if (!gaId) { return; }
+
       gtag('js', new Date());
       gtag('config', gaId, { anonymize_ip: true });
 
       gtag("set", "ads_data_redaction", true);
       gtag("set", "url_passthrough", false);
 
-      Cookiebot.show(false,false);
+
 
       Cookiebot.getScript('https://consent.cookiebot.com/fe011b35-9177-4947-b0c2-e73b66c3b222/cd.js', true,
 
           function(err, script) {
-                console.log(script);
-                console.log(err);
+                console.log("Dialog Displayed");
           }
       )
 
       window.addEventListener('CookiebotOnAccept', function (e) {
-          if (Cookiebot.consent.marketing)
-          {
-              //Execute code that sets marketing cookies
+          console.log(Cookiebot.consent.marketing);
+              console.log("CookiebotOnAccept");
 
               gtag("consent", "update", {
                   ad_storage: "granted",
@@ -51,22 +60,15 @@
                   functionality_storage: "granted",
                   personalization_storage: "granted",
                   security_storage: "granted"
-              })
+              });
 
-
-
-
-          }
       }, false);
 
-    var gaId;
-    if (dnt) {
-        gaId = '{{ site.data.settings.google_analytics_dnt }}';
-    }
-    else {
-        gaId = '{{ site.data.settings.google_analytics }}';
-    }
-    if (!gaId) { return; }
+      function CookiebotCallback_OnAccept() {
+
+          console.log("CookiebotCallback_OnAccept");
+      }
+
 
     const s = document.createElement('script');
     s.async = true;
@@ -75,31 +77,8 @@
 
 
 
-
-
-
     };
     document.head.appendChild(s);
-
-
-
-    //9 cookie_consent_update
-
-
-    //8 Set
-
-
-    // 7 Consent Update
-
-
-      // 6 cookie_consent_marketing
-      //dataLayer.push({event: "cookie_consent_marketing", gtm.uniqueEventId: 11});
-
-      //5 Event: cookie_consent_statistics
-
-      //4 Event: cookie_consent_preferences
-
-      // 1 set
 
   })();
 </script>
