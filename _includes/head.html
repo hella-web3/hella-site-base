@@ -134,5 +134,15 @@
     }
   </script>
 
-  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+  <meta name="theme-color" content="#ae00ee">
+
+  <!-- Resource Hints for Analytics -->
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+
+  <!-- Preload critical CSS and swap to stylesheet -->
+  <link rel="preload" href="{{ '/css/main.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}"></noscript>
 </head>

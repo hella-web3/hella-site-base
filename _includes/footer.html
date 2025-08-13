@@ -42,7 +42,7 @@
                   </svg>
                 </div>
                 {% endif %}
-                <img class="lazy" data-src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+                <img class="lazy" data-src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy" decoding="async">
               </a>
               {% endif %}
               <div class="footer__recent-meta">
