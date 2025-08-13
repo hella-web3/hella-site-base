@@ -8,17 +8,17 @@
             return;
         }
 
-        const dnt = navigator.doNotTrack === '1' || window.doNotTrack === '1' || navigator.msDoNotTrack === '1';
+        if (localStorage.getItem("consent") !== 'true' && CookieConsent.consented !== true) {
 
-        window.dataLayer = window.dataLayer || [];
+            const dnt = navigator.doNotTrack === '1' || window.doNotTrack === '1' || navigator.msDoNotTrack === '1';
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+            window.dataLayer = window.dataLayer || [];
 
-        window.gtag = gtag;
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-        if (localStorage.getItem("consent") !== 'true') {
+            window.gtag = gtag;
 
             gtag("consent", "default", {
                 ad_storage: "denied",
@@ -29,9 +29,6 @@
                 personalization_storage: "denied",
                 security_storage: "denied",
             });
-
-            console.log("Default consent set");
-            console.log(dataLayer);
 
             var gaId;
             if (dnt) {
@@ -49,14 +46,8 @@
             gtag("set", "ads_data_redaction", true);
             gtag("set", "url_passthrough", false);
 
-            Cookiebot.show(false, false);
-
             window.addEventListener('CookiebotOnAccept', function (e) {
 
-                console.log(Cookiebot.consent);
-
-                console.log("CookiebotOnAccept Event Triggered");
-                console.log(e);
                 localStorage.setItem("consent", 'true');
 
                 gtag("consent", "update", {
@@ -70,8 +61,6 @@
                 });
 
                 gtag('event', 'cookie_consent_marketing', {});
-                gtag('event', 'cookie_consent_statistics', {});
-                gtag('event', 'cookie_consent_preferences', {});
 
                 const s = document.createElement('script');
                 s.async = true;
@@ -80,23 +69,7 @@
 
                 };
                 document.head.appendChild(s);
-
             }, false);
-        }
-        else {
-            var gaId = '{{ site.data.settings.google_analytics }}';
-            if (!gaId) { return; }
-            var s = document.createElement('script');
-            s.async = true;
-            s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
-            s.onload = function(){
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                window.gtag = gtag;
-                gtag('js', new Date());
-                gtag('config', gaId, { anonymize_ip: true });
-            };
-            document.head.appendChild(s);
         }
     })();
 </script>
