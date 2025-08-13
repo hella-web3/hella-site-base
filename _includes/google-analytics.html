@@ -21,8 +21,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){ dataLayer.push(arguments); }
       window.gtag = gtag;
-      gtag('js', new Date());
-      gtag('config', gaId, { anonymize_ip: true });
 
         gtag("consent", "default", {
             ad_storage: "denied",
@@ -37,6 +35,9 @@
 
         console.log(window.dataLayer);
         console.log(navigator.userAgent);
+
+        gtag('js', new Date());
+        gtag('config', gaId, { anonymize_ip: true });
 
         gtag("set", "ads_data_redaction", true);
         gtag("set", "url_passthrough", false);
