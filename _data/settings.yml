@@ -1,7 +1,7 @@
 #-------------------------------
 # Site Settings
-title: Hella
-description: Hella Consulting - Web3 Native Fractional Engineering, DevRel, Digital Marketing & Strategy
+title: Hella Web3 US expertise + Filipino Cost-Effectiveness
+description: Hella Consulting - Web3 Native Native Fractional Engineering, DevRel, Digital Marketing & Strategy with US Expertise multiplied by the cost effectiveness of Philippine near+offshoring
 logo: /images/hella-logo-4.png
 logo_dark: /images/hella-logo-3.jpg
 baseurl:
@@ -44,10 +44,10 @@ author:
 # Hero Settings
 hero:
   enable: true
-  hero_title: Hella
-  hero_subtitle: Web3-Native Fractional Engineering, DevRel, Digital Marketing & Strategy
+  hero_title: Hella Web3
+  hero_subtitle: Philippines-based Fractional Near+Offshore Engineering, DevRel, Digital Marketing & Strategy
   hero_description: |
-    Full-service consultancy with broad experience across Web2, Enterprise and Web3
+    US trained & educated leadership + full-service consultancy with broad experience across Fortune 500, Silicon Valley and Web3
   hero_image: /images/101.jpg
   hero_button_text: Let's Go
   hero_button_link: '/contact/'
@@ -55,7 +55,7 @@ hero:
 # Team
 team:
   enable: true
-  team_title: Hella Teamwork
+  team_title: Hella Teamwork - US expertise multiplied by Philippine Cost Effectiveness
   team_link: '/team/'
   team_image:
     - alt: "Chris Anatalio"
@@ -83,7 +83,7 @@ mailchimp:
 
 #-------------------------------
 # Footer Settings
-footer_description: Unleash the potential of your Web3 On-chain Startup with Hella
+footer_description: Unleash the potential of your startup with the only Manila-based Web3 Near+Offshoring consulting startup with US educated and trained leadership.  We provide the expertise of Silicon Valley multiplied by the cost-effectiveness of Philippine-based near+offshoring.
 
 #-------------------------------
 # Social Settings
