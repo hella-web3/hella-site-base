@@ -37,7 +37,7 @@ keywords: Web3, Consulting, Engineering, DevRel, Digital Marketing, Strategy, Bl
 # Author Settings
 author:
   author_name: Chris Anatalio
-  author_avatar: images/chris1-web3-engineer.jpg
+  author_avatar: images/chris1-web3-engineer.png
 
 
 #-------------------------------
@@ -59,7 +59,7 @@ team:
   team_link: '/team/'
   team_image:
     - alt: "Chris Anatalio"
-      image: "/images/chris1-web3-engineer.jpg"
+      image: "/images/chris1-web3-engineer.png"
     - alt: "Anna Lopatina"
       image: "/images/anna1.jpg"
     - alt: "Logo"

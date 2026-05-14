@@ -21,9 +21,9 @@ Deep experience in service oriented architecture with broad generalist experienc
 
 > I work towards a global, inclusive, diverse vision of the tech industry where developers all over the world are empowered to dream, build and succeed together.
 >
-![ChrisA]({{site.baseurl}}/images/chris1-web3-engineer.jpg)
+![ChrisA]({{site.baseurl}}/images/chris1-web3-engineer.png)
 
-
+[LinkedIn](https://www.linkedin.com/in/anataliocs/) - [Twitter](https://twitter.com/canatalio) - [GitHub](https://github.com/anataliocs)
 
 ----
 
@@ -35,3 +35,5 @@ Web3 native and viral specialist.
 > Ready to make a difference
 > 
 ![Anna]({{site.baseurl}}/images/anna1.jpg)
+
+[LinkedIn](https://www.linkedin.com/in/anna-lopatina-026bb0246/) - [Twitter](https://x.com/bllaazed) - [GitHub](https://github.com/AnnaLopatinaa)
