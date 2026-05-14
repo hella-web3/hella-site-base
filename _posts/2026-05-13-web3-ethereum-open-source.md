@@ -2,7 +2,7 @@
 layout: post
 title: Open-Source Web3 Ethereum Projects at Hella Labs
 description: Supporting the Web3 Ethereum ecosystem with open source projects, tools and test automation.
-date: 2026-01-16 9:29:35 +0300
+date: 2026-05-13 9:29:35 +0300
 image: '/images/blog/github-open-source.png'
 tags: [ Ethereum, Javascript, Typescript, Testcontainers, Wiremock, Foundry ]
 tags_color: '#4643ec'
@@ -60,13 +60,13 @@ describe("AnvilContainer", () => {
 });
 ```
 
-Check out the [docs](https://www.npmjs.com/package/@hellaweb3/foundryanvil-testcontainers-nodejs) for more info:
+Check out the [docs](https://www.npmjs.com/package/@hellaweb3/foundryanvil-testcontainers-nodejs) for more info.
 
 ----
 
 ## Wiremock Testcontainers Nodejs
 
-wiremock-testcontainers-nodejs is a Typescript nodejs library that spins up a WireMock instance with [Testcontainers](https://testcontainers.com/). 
+`wiremock-testcontainers-nodejs` is a Typescript nodejs library that spins up a WireMock instance with [Testcontainers](https://testcontainers.com/). 
 It provides a fluent API to configure and start WireMock containers, including support for loading mappings and files from recorded [Wiremock](https://wiremock.org/) 
 sessions.
 
@@ -105,9 +105,11 @@ describe("E2E Test", () => {
 });
 ```
 
-Check out the [docs](https://www.npmjs.com/package/@hellaweb3/wiremock-testcontainers-nodejs) for more info:
+Check out the [docs](https://www.npmjs.com/package/@hellaweb3/wiremock-testcontainers-nodejs) for more info.
 
+----
 
+Help make ethereum more secure with better test automation.
 
 _Thanks for reading, supporting open source and be sure to post your comments below!_
 
