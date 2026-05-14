@@ -5,7 +5,7 @@
 
 # Hella Main Web Site 
 
-[![Deployment](https://github.com/anataliocs/hella-site-base/actions/workflows/jekyll.yml/badge.svg)](https://github.com/anataliocs/hella-site-base/actions/workflows/jekyll.yml)
+[![Deployment](https://github.com/hella-web3/hella-site-base/actions/workflows/jekyll.yml/badge.svg)](https://github.com/hella-web3/hella-site-base/actions/workflows/jekyll.yml)
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=hella-web3/hella-site-base)
 
