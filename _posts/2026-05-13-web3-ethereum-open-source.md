@@ -18,6 +18,7 @@ sitemap: true
 
 - [Foundry Anvil Testcontainers Nodejs](https://www.npmjs.com/package/@hellaweb3/foundryanvil-testcontainers-nodejs)
 - [Wiremock Testcontainers Nodejs](https://www.npmjs.com/package/@hellaweb3/wiremock-testcontainers-nodejs)
+- [Ethereum Transaction Explorer TUI](https://github.com/anataliocs/etherscan-tui-go)
 
 ----
 
@@ -109,7 +110,18 @@ Check out the [docs](https://www.npmjs.com/package/@hellaweb3/wiremock-testconta
 
 ----
 
+## Ethereum Transaction Explorer TUI
+
+A terminal(TUI) Ethereum transaction explorer built with Go and the [Bubble Tea](https://github.com/charmbracelet/bubbletea) TUI framework. Fetch, 
+display and explore details for any Ethereum transaction hash using the Etherscan API V2 all in your terminal.
+
+Built with bubbletea, bubbles, and lipgloss.
+
+[https://github.com/anataliocs/etherscan-tui-go](https://github.com/anataliocs/etherscan-tui-go)
+
+----
+
 Help make ethereum more secure with better test automation.
 
-_Thanks for reading, supporting open source and be sure to post your comments below!_
+_Thanks for reading and supporting open source. Post your comments below!_
 
